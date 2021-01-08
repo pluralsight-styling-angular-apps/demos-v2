@@ -1,0 +1,45 @@
+@import '../../../../scss/root/colors';
+
+
+
+
+.tooltip {
+    background-color: $g-root__color--primary--03a;
+    border-radius: 0;
+    color: white;
+    font-size: 75%;
+    font-weight: normal;
+    left: 50%;
+    line-height: 1.5;
+    opacity: 0;
+    padding: 0.75rem 1rem;
+    pointer-events: none;
+    position: absolute;
+    top: 200%;
+    transition: opacity ease 0.25s;
+    transform: translateX(-50%);
+    width: 12em;
+    z-index: 1;
+
+    &::before {
+        border: inset 0.75rem;
+        border-bottom-style: solid;
+        border-color: transparent transparent $g-root__color--primary--03a;
+        border-top-width: 0;
+        bottom: 100%;
+        content: "";
+        display: block;
+        height: 0;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+        width: 0;
+    }
+
+    // Opened
+    :host:hover > & {
+        opacity: 1;
+        pointer-events: all;
+    }
+
+}

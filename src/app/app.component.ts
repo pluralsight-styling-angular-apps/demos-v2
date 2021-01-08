@@ -1,10 +1,24 @@
+import { AppModule } from './app.module';
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+    selector: 'saa-app',
+    templateUrl: 'app.component.html',
+    styleUrls: ['app.component.scss']
 })
+
 export class AppComponent {
-  title = 'demo';
+
+  pills = [
+    { 
+      label: 'HTML'
+    },
+    { 
+      label: 'CSS'
+    },
+    { 
+      label: 'SASS'
+    }
+  ];
+
 }

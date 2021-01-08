@@ -1,0 +1,44 @@
+@import '../../../../scss/typography/headers';
+@import '../../../../scss/typography/paragraphs';
+
+
+
+
+.items {
+    list-style: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
+}
+
+.item {
+    border: solid 0.0625em;
+    padding: 1em;
+
+    &__thumbnail {
+        padding: 2em 1em;
+        text-align: center;
+    }
+
+    &__image {
+        max-width: 100%;
+    }    
+
+    &__title {
+        @include g-root__h3;
+    }
+
+    &__description {
+        @include g-root__paragraph;
+    }
+
+    &__button {
+        border-radius: 0.5em;
+        color: white;
+        cursor: pointer;
+        display: inline-block;
+        padding: 1em 1.4em;
+        transition: background ease 0.25s;
+    }
+
+}

@@ -1,0 +1,32 @@
+@import '../../../../scss/root/colors';
+
+
+
+
+:host(.color--01) {
+
+    .item {
+        border-color: #ccc;
+
+        &__button {
+            background: $g-root__color--primary--02a;
+
+            &:hover {
+                background: $g-root__color--primary--02b;
+            }
+
+        }
+        
+    }
+
+    // First Item
+    .item:first-child .item__thumbnail {
+        background: $g-root__color--secondary--02a;
+    }
+
+    // Last Item
+    .item:last-child .item__thumbnail {
+        background: $g-root__color--secondary--03a;
+    }
+
+}

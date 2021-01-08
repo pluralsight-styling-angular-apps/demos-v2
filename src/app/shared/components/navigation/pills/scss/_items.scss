@@ -1,0 +1,69 @@
+@import '../../../../scss/root/colors';
+
+
+
+
+.items {
+    display: flex; 
+    list-style: none; 
+    margin: 1em 0; 
+    padding: 0;
+}
+
+.item {
+
+    &-link {
+        background: #efefef;
+        border-radius: 0.5em;        
+        display: block;
+        margin: 0 0.2em;
+        padding: 0.5em 1em;
+        transition: background ease 0.25s;
+    }
+
+    // First Item
+    &:first-child &-link {
+        margin-left: 0;
+    }
+
+    // Unselected
+    &-link--unselected {
+        background: rgba($g-root__color--secondary--04c, 0.6);
+        color: $g-root__color--primary--02a;
+        cursor: pointer;
+
+        &:hover {
+            background: $g-root__color--secondary--04c;
+            color: $g-root__color--primary--02b;
+            text-decoration: none;
+        }
+
+        &:active {
+            color: $g-root__color--primary--02b;
+        }
+
+        &:visited {
+            color: $g-root__color--primary--02a;
+        }
+
+    }
+
+    // Selected
+    &-link--selected {
+        background: $g-root__color--primary--02a;
+        color: white;
+
+        &:hover,
+        &:active {      
+            background: $g-root__color--primary--02a;          
+            color: white;
+            cursor: default;                
+        }
+
+        &:visited {
+            color: white;
+        }
+
+    }
+
+}

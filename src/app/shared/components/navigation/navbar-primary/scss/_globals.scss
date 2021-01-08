@@ -1,0 +1,11 @@
+@import '../../../../scss/root/colors';
+
+
+
+
+:host {
+    background: $g-root__color--primary--01a;
+    display: block; 
+    font-size: 1rem;
+    margin-top: 1.8em; 
+}

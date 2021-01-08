@@ -1,0 +1,20 @@
+<ul class="items">
+    <li 
+        *ngFor="let item of items"
+        class="item"
+        [ngClass]="{
+            'item--active': item.active,
+            'item--inactive': !item.active}">
+        <a 
+            (click)="selectItem(item)"
+            class="item__label"
+            [ngClass]="{
+                'item__label--active': item.active,
+                'item__label--inactive': !item.active}">
+            <span class="item__label-text">
+                {{item.title}}
+            </span>
+        </a>
+        <template [ngTemplateOutlet]="item.template"></template>
+    </li>
+</ul>

@@ -1,0 +1,41 @@
+@import '../../../../scss/layout/container';
+@import '../../shared/scss/mixins';
+
+
+
+
+.items {
+    @include g-layout__container;
+    display: flex; 
+    list-style: none; 
+}
+
+.item {
+    padding: 0 1em;
+
+    &__link {
+        color: white; 
+        cursor: pointer;
+        text-decoration: none;
+        
+        &:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+    }
+
+    // First
+    &:first-child {
+        padding-left: 0;
+    }
+
+    // Last
+    &:last-child {
+        padding-left: 0;
+    }
+
+    // Search
+    @include navigation__search;
+
+}

@@ -1,0 +1,28 @@
+@import '../../../../scss/typography/headers';
+@import '../../../../scss/typography/paragraphs';
+
+
+
+
+.message {
+
+    &__title {
+        @include g-root__h2;
+        margin-top: 0.5em;
+    }
+
+    &__content {
+        @include g-root__paragraph;
+        align-items: center;
+        display: inline-flex;
+        padding-bottom: 1em;
+    }
+
+    &__icon {
+        fill: currentColor;
+        height: 1.5em;
+        margin-right: 0.75em;
+        width: 1.5em;
+    }
+
+}

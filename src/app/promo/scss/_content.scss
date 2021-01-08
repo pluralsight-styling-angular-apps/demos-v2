@@ -1,0 +1,22 @@
+@import '../../shared/scss/typography/headers';
+@import '../../shared/scss/typography/paragraphs';
+
+
+
+
+.content {
+    border: solid 0.0625em;
+    margin-right: 1em;
+    max-width: 35%;
+    padding: 1em;
+
+    &__title {
+        @include g-root__h3;
+        margin-top: 0.5em;
+    }
+
+    &__description {
+        @include g-root__paragraph;
+    }
+
+}

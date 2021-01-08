@@ -1,0 +1,27 @@
+@import 'colors';
+
+
+
+@mixin g-root__link {
+    color: $g-root__color--primary--02a;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover,
+    &:active {
+        text-decoration: underline;
+    }
+
+    &:hover {
+        color: $g-root__color--primary--02b;
+    }
+
+    &:active {
+        color: $g-root__color--primary--01a;
+    }
+
+    &:visited {
+        color: $g-root__color--primary--03a;
+    }
+
+}

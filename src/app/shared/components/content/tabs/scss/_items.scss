@@ -1,0 +1,128 @@
+@import '../../../../scss/root/colors';
+
+
+
+
+.items {
+    border-bottom: solid 1px #ccc;
+    display: flex; 
+    list-style: none; 
+    margin: 0; 
+    padding: 0;
+}
+
+.item {
+    margin-bottom: -1px;
+    
+    &-link {
+        border-radius: 0.5em 0.5em 0 0;
+        border: solid 1px #ccc;
+        display: block;
+        margin: 0 0.2em;
+        padding: 1em;
+        transition: background ease 0.25s;
+    }
+
+    // First Item
+    &:first-child &-link {
+        margin-left: 0;
+    }
+
+    // Inactive
+    &-link--inactive {
+        background: #efefef;
+        color: $g-root__color--primary--02a;
+        cursor: pointer;
+
+        &:hover {
+            background: $g-root__color--secondary--04c;
+            border-bottom-color: #ccc;
+            color: $g-root__color--primary--02b;
+            text-decoration: none;
+        }
+
+        &:active {
+            color: $g-root__color--primary--02b;
+        }
+
+        &:visited {
+            color: $g-root__color--primary--02a;
+        }
+
+    }
+
+    // Active
+    &-link--active {
+        background: white;
+        border-bottom-color: transparent;
+        color: $g-root__color--primary--03a;
+
+        &:hover,
+        &:active,
+        &:visited {      
+            background: white; 
+            border-bottom-color: transparent;        
+            color: $g-root__color--primary--03a;
+            cursor: default;                
+        }
+
+    }
+
+}
+
+
+
+
+// Variations
+// _________________________________________________________________________________________
+:host-context(saa-modal.color--02) {
+
+    $color__foreground: white;
+    $color__background: $g-root__color--primary--01a;
+
+    .items {
+        border-bottom-color: $color__foreground;
+    }
+
+    .item {
+    
+        &-link {
+            border-color: $color__foreground;
+            border-bottom-color: transparent;
+        }
+
+        // Inactive
+        &-link--inactive {
+            background: rgba($color__foreground, 0.3);
+            color: $color__foreground;
+
+            &:hover {
+                background: rgba($color__foreground, 0.5);
+                border-bottom-color: $color__foreground;
+                color: $color__foreground;
+            }
+
+            &:active,
+            &:visited {
+                color: $color__foreground;
+            }
+
+        }
+
+        // Active
+        &-link--active {
+            background: $color__background;
+            color: $color__foreground;
+
+            &:hover,
+            &:active,
+            &:visited {      
+                background: $color__background; 
+                color: $color__foreground;
+            }
+
+        }
+
+    }
+
+}

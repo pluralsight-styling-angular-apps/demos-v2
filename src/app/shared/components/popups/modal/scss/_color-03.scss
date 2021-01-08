@@ -1,0 +1,38 @@
+@import '../../../../scss/root/colors';
+
+
+
+
+:host(.color--03) {
+
+    // CSS Custom Properties
+    --background: #1F778D;
+    --foreground: white;
+
+    .modal {
+        background: $g-root__color--primary--02a;
+        color: white;
+
+        &__close {
+            border: solid 1px white;
+
+            &::before,
+            &::after {
+                background: white;
+            }
+
+        }
+
+        &__highlight {
+            background: $g-root__color--secondary--04b;
+            overflow: hidden;
+            padding: 0 1em;
+
+            // CSS Custom Properties
+            --background: #77A032;
+            
+        }
+
+    }
+
+}
