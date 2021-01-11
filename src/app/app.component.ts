@@ -2,7 +2,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'saa-app',
-  encapsulation: ViewEncapsulation.None,
+  encapsulation: ViewEncapsulation.ShadowDom,
   template: `
     <header>
       <h1>Styling Angular Applications</h1>
@@ -14,10 +14,10 @@ import { Component, ViewEncapsulation } from '@angular/core';
   `,
   styles: [`
 
-    body {
+    :host {
       color: #666;
+      display: block;
       font-family: arial, sans-serif;
-      margin: 0;
       padding: 1.5em;
     }
 
