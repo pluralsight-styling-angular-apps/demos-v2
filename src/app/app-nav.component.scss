@@ -1,5 +1,4 @@
-:host-context(.example) {
-    background: #675BA7; 
+:host {
     border-radius: 0.5em;
     display: block; 
     margin: 1.5em 0; 
@@ -18,7 +17,17 @@ a {
     padding: 0 1em; 
     text-decoration: none;
 }
-    
+
 a:hover {
     text-decoration: underline;
+}
+
+// Colors
+// ________________________________________________________
+:host-context(.color--01) {
+    background: #675BA7; 
+}
+
+:host-context(.color--02) {
+    background: #2A9FBC; 
 }
