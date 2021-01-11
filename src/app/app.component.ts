@@ -6,7 +6,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
   template: `
     <header>
       <h1>Styling Angular Applications</h1>
-      <em>For Angular Versions 2.0+</em>
+      <em>For Modern Angular Applications</em>
     </header>
     <div>
       <saa-app-nav></saa-app-nav>
