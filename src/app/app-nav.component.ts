@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
     selector: 'saa-app-nav',
     template: `
-        <link rel="stylesheet" href="app/app-nav.component.css" />
+        <link rel="stylesheet" href="app-nav.component.css" />
         <div>
             <ul>
                 <li>
