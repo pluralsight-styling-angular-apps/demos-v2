@@ -2,8 +2,7 @@ import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'saa-pills',
-  templateUrl: 'pills.component.html',
-  styleUrls: ['pills.component.scss']
+  templateUrl: 'pills.component.html'
 })
 
 export class PillsComponent {
@@ -13,5 +12,4 @@ export class PillsComponent {
     togglePill(pill) {
         this.selectedPill = pill;
     }
-
 }

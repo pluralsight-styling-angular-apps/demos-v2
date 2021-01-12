@@ -1,0 +1,72 @@
+@import 'colors';
+
+
+
+.tabs {
+    margin: 2em 0;
+}
+
+.tabs__items {
+    border-bottom: solid 1px #ccc;
+    display: flex; 
+    list-style: none; 
+    margin: 0; 
+    padding: 0;
+}
+
+.tabs__item {
+    margin-bottom: -1px;
+}
+    
+.tabs__item-link {
+    background: #efefef;
+    border-radius: 0.5em 0.5em 0 0;
+    border: solid 1px #ccc;
+    display: block;
+    margin: 0 0.2em;
+    padding: 1em;
+    transition: background ease 0.25s;
+}
+
+.tabs__item-link:hover {
+    background: $color__secondary--04c;
+    border-bottom-color: #ccc;
+    text-decoration: none;
+}
+
+.tabs__item-link:active {
+    color: $color__primary--02b;
+}
+
+.tabs__item-link:visited {
+    color: $color__primary--02a;
+}
+
+// First Item
+.tabs__item:first-child .tabs__item-link {
+    margin-left: 0;
+}
+
+// Active
+.tabs__item-link--active {
+    background: white;
+    border-bottom-color: transparent;
+    color: $color__primary--03a;
+}
+
+.tabs__item-link--active:hover,
+.tabs__item-link--active:active,
+.tabs__item-link--active:visited {      
+    background: white; 
+    border-bottom-color: transparent;        
+    color: $color__primary--03a;
+    cursor: default;                
+}
+
+// Pane
+.tabs__pane {
+    border: solid 1px #ccc;
+    border-top: none;
+    overflow: hidden;
+    padding: 1em 1em 0;
+}

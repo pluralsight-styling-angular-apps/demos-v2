@@ -1,1 +1,33 @@
-/* You can add global styles to this file, and also import other style files */
+// Global
+// _________________________________________________________________________________________
+@import 'styles/normalize';
+@import 'styles/root';
+
+
+
+// App
+// _________________________________________________________________________________________
+@import 'styles/app-header';
+@import 'styles/app-footer';
+
+
+
+
+// Core
+// _________________________________________________________________________________________
+@import 'styles/links';
+@import 'styles/layout';
+@import 'styles/typography';
+
+
+
+
+// Components
+// _________________________________________________________________________________________
+@import 'styles/accordion';
+@import 'styles/modal';
+@import 'styles/navbar-primary';
+@import 'styles/navbar-secondary';
+@import 'styles/pills';
+@import 'styles/tabs';
+@import 'styles/tooltip';

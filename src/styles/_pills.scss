@@ -1,0 +1,55 @@
+@import 'colors';
+
+
+
+.pills {
+    display: flex; 
+    list-style: none; 
+    margin: 1em 0; 
+    padding: 0;
+}
+       
+.pills__item-link {
+    background: #efefef;
+    background: rgba($color__secondary--04c, 0.6);
+    border-radius: 0.5em;
+    display: block;
+    margin: 0 0.2em;
+    padding: 0.5em 1em;
+    transition: background ease 0.25s;
+}
+
+.pills__item-link:hover {
+    background: $color__secondary--04c;
+    text-decoration: none;
+}
+
+.pills__item-link:active {
+    color: $color__primary--02b;
+}
+
+.pills__item-link:visited {
+    color: $color__primary--02a;
+}
+
+// First Item
+.pills__item:first-child .pills__item-link {
+    margin-left: 0;
+}
+
+// Selected
+.pills__item-link--selected {
+    background: $color__primary--02a;
+    color: white;
+}
+
+.pills__item-link--selected:hover,
+.pills__item-link--selected:active {      
+    background: $color__primary--02a;          
+    color: white;
+    cursor: default;                
+}
+
+.pills__item-link--selected:visited {
+    color: white;
+}
