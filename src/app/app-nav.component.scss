@@ -1,4 +1,5 @@
 :host {
+    background: #2A9FBC; 
     border-radius: 0.5em;
     display: block; 
     margin: 1.5em 0; 
@@ -20,14 +21,4 @@ a {
 
 a:hover {
     text-decoration: underline;
-}
-
-// Colors
-// ________________________________________________________
-:host-context(.color--01) {
-    background: #675BA7; 
-}
-
-:host-context(.color--02) {
-    background: #2A9FBC; 
 }
