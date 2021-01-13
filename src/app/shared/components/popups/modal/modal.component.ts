@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 export class ModalComponent {
     isOpen = false;
 
-    toggleOpenClose() {
+    toggleOpenClose(): void {
         this.isOpen = !this.isOpen;
     }
 }
