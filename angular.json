@@ -30,7 +30,14 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/app/shared/scss/layout",
+                "src/app/shared/scss/root",
+                "src/app/shared/scss/typography"
+              ]
+            }
           },
           "configurations": {
             "production": {
