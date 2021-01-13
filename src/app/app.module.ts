@@ -4,9 +4,9 @@ import { AppComponent }             from './app.component';
 
 // Content Components
 import { AccordionComponent }       from './shared/components/content/accordion/accordion.component';
-import { AccordionPaneComponent }   from './shared/components/content/accordion/accordion-pane.component';
+import { AccordionPaneComponent }   from './shared/components/content/accordion/accordion-pane/accordion-pane.component';
 import { TabsComponent }            from './shared/components/content/tabs/tabs.component';
-import { TabsPaneComponent }        from './shared/components/content/tabs/tabs-pane.component';
+import { TabsPaneComponent }        from './shared/components/content/tabs/tabs-pane/tabs-pane.component';
 
 // Navigation Components
 import { NavBarPrimaryComponent }   from './shared/components/navigation/navbar-primary/navbar-primary.component';

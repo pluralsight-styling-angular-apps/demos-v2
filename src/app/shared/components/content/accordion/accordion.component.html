@@ -1,16 +1,18 @@
 <ul class="accordion">
     <li 
-        *ngFor="let item of items"
+        *ngFor="let item of items; let i = index"
         class="accordion__item"
-        [class.accordion__item--active]="item.active">
+        [class.accordion__item--active]="activeIndex === i">
         <a 
-            (click)="selectItem(item)"
+            (click)="selectItem(i)"
             class="accordion__label"
-            [class.accordion__label--active]="item.active">
+            [class.accordion__label--active]="activeIndex === i">
             <span class="accordion__label-text">
                 {{item.title}}
             </span>
         </a>
-        <ng-template [ngTemplateOutlet]="item.template"></ng-template>
+        <ng-container *ngIf="activeIndex === i">
+            <ng-template [ngTemplateOutlet]="item.template"></ng-template>
+        </ng-container>
     </li>
 </ul>
