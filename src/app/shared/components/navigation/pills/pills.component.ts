@@ -1,17 +1,20 @@
 import { Component, Input } from '@angular/core';
 
+export interface Pill {
+  label: string;
+};
+
 @Component({
   selector: 'saa-pills',
-  templateUrl: 'pills.component.html',
-  styleUrls: ['pills.component.scss']
+  templateUrl: './pills.component.html',
+  styleUrls: ['./pills.component.scss']
 })
 
 export class PillsComponent {
-    @Input() pills;
-    selectedPill: string;
+    @Input() pills: Pill[] = [];
+    selectedPill: Pill;
 
-    togglePill(pill) {
+    togglePill(pill: Pill) {
         this.selectedPill = pill;
     }
-
 }
