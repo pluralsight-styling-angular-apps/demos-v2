@@ -5,8 +5,6 @@
     </p>
 </div>
 <saa-thumbnail-list
-    [ngClass]="{
-        'color--01': isColor01,
-        'color--02': !isColor01}"
+    [ngClass]="isColor01 ? 'color--01' : 'color--02'"
     class="layout--01 ">
 </saa-thumbnail-list>
