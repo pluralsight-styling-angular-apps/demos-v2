@@ -7,17 +7,12 @@ import { Component, ContentChild, ElementRef } from '@angular/core';
 })
 
 export class MessageComponent {
-    @ContentChild('messageContent') 'messageContent';
-    themeClassNames;
+    @ContentChild('messageContent') messageContent: ElementRef;
     isLayout01 = false;
 
     constructor(private hostRef: ElementRef) {}
 
     ngAfterContentInit() {
-        this.themeClassNames = this.hostRef.nativeElement.className.split(' ');
-        if (this.themeClassNames.indexOf('layout--01') > -1) {
-            this.isLayout01 = true;
-        }
+        this.isLayout01 = this.hostRef.nativeElement.classList.contains('layout--01');
     }
-
 }

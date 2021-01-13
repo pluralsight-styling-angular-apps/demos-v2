@@ -7,13 +7,11 @@ import { Component, ElementRef } from '@angular/core';
 })
 
 export class PromoComponent {
-    themeClassNames: string[] = [];
     isColor01 = false;
 
     constructor(private hostRef: ElementRef) {}
 
     ngAfterContentInit() {
-        this.themeClassNames = this.hostRef.nativeElement.className.split(' ');
-        this.isColor01 = this.themeClassNames.indexOf('color--01') > -1;
+        this.isColor01 = this.hostRef.nativeElement.classList.contains('color--01');
     }
 }
