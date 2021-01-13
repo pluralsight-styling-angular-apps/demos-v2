@@ -1,4 +1,4 @@
-import { Component, ElementRef } from '@angular/core';
+import { AfterContentInit, Component, ElementRef } from '@angular/core';
 
 @Component({
     selector: 'saa-promo',
@@ -6,12 +6,12 @@ import { Component, ElementRef } from '@angular/core';
     styleUrls: ['./promo.component.scss']
 })
 
-export class PromoComponent {
+export class PromoComponent implements AfterContentInit {
     isColor01 = false;
 
     constructor(private hostRef: ElementRef) {}
 
-    ngAfterContentInit() {
+    ngAfterContentInit(): void {
         this.isColor01 = this.hostRef.nativeElement.classList.contains('color--01');
     }
 }

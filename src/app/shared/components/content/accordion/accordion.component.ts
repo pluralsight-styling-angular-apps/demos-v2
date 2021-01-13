@@ -9,8 +9,9 @@ import { AccordionPaneComponent } from './accordion-pane/accordion-pane.componen
 
 export class AccordionComponent {
     @ContentChildren(AccordionPaneComponent) items: QueryList<AccordionPaneComponent>;
+    activeIndex: number;
 
-    selectItem(item: AccordionPaneComponent) {
-        item.active = !item.active;
+    selectItem(index: number): void {
+        this.activeIndex = index;
     }
 }

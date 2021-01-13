@@ -6,5 +6,4 @@ import { Component } from '@angular/core';
     styleUrls: ['./thumbnail-list.component.scss']
 })
 
-export class ThumbnailListComponent {
-}
+export class ThumbnailListComponent { }

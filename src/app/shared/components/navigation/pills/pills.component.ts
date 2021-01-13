@@ -14,7 +14,7 @@ export class PillsComponent {
     @Input() pills: Pill[] = [];
     selectedPill: Pill;
 
-    togglePill(pill: Pill) {
+    togglePill(pill: Pill): void {
         this.selectedPill = pill;
     }
 }

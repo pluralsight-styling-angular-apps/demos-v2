@@ -1,4 +1,4 @@
-import { Component, ContentChild, ElementRef } from '@angular/core';
+import { AfterContentInit, Component, ContentChild, ElementRef } from '@angular/core';
 
 @Component({
     selector: 'saa-message',
@@ -6,13 +6,13 @@ import { Component, ContentChild, ElementRef } from '@angular/core';
     styleUrls: ['./message.component.scss']
 })
 
-export class MessageComponent {
+export class MessageComponent implements AfterContentInit {
     @ContentChild('messageContent') messageContent: ElementRef;
     isLayout01 = false;
 
     constructor(private hostRef: ElementRef) {}
 
-    ngAfterContentInit() {
+    ngAfterContentInit(): void {
         this.isLayout01 = this.hostRef.nativeElement.classList.contains('layout--01');
     }
 }
