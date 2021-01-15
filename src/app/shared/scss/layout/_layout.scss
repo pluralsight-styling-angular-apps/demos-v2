@@ -1,6 +1,6 @@
 // Container
 // _________________________________________________________________________________________
-.layout-container {
+.l-container {
     margin: 0 auto;
     max-width: 75rem;
     padding: 0 1.5rem;
@@ -14,7 +14,7 @@
 $spacing--xAxis: 2em;
 $spacing--yAxis: 2em;
 
-.layout-grid {
+.l-grid {
     display: flex;
     flex-wrap: wrap;
     margin-left: -($spacing--xAxis / 2);
@@ -22,18 +22,18 @@ $spacing--yAxis: 2em;
 }
 
 $widths: (
-    layout-grid__item--01: 8.333333333%,
-    layout-grid__item--02: 16.666666667%,
-    layout-grid__item--03: 25%,
-    layout-grid__item--04: 33.333333333%,
-    layout-grid__item--05: 41.666666667%,
-    layout-grid__item--06: 50%,
-    layout-grid__item--07: 58.333333333%,
-    layout-grid__item--08: 66.666666667%,
-    layout-grid__item--09: 75%,
-    layout-grid__item--10: 83.333333333%,
-    layout-grid__item--11: 91.666666667%,
-    layout-grid__item--12: 100%
+    l-grid__item--01: 8.333333333%,
+    l-grid__item--02: 16.666666667%,
+    l-grid__item--03: 25%,
+    l-grid__item--04: 33.333333333%,
+    l-grid__item--05: 41.666666667%,
+    l-grid__item--06: 50%,
+    l-grid__item--07: 58.333333333%,
+    l-grid__item--08: 66.666666667%,
+    l-grid__item--09: 75%,
+    l-grid__item--10: 83.333333333%,
+    l-grid__item--11: 91.666666667%,
+    l-grid__item--12: 100%
 );
 
 @each $class, $width in $widths {

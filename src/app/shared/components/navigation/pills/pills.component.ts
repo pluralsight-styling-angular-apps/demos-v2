@@ -6,7 +6,8 @@ export interface Pill {
 
 @Component({
   selector: 'saa-pills',
-  templateUrl: './pills.component.html'
+  templateUrl: './pills.component.html',
+  styleUrls: ['./pills.component.scss']
 })
 
 export class PillsComponent {

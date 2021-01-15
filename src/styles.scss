@@ -1,33 +1,21 @@
-// Global
+// Root
 // _________________________________________________________________________________________
-@import 'app/shared/styles/normalize';
-@import 'app/shared/styles/root';
+@import 'app/shared/scss/root/normalize';
+@import 'app/shared/scss/root/root';
+@import 'app/shared/scss/root/links';
 
 
 
-// App
+// Layout
 // _________________________________________________________________________________________
-@import 'app/shared/styles/app-header';
-@import 'app/shared/styles/app-footer';
+@import 'app/shared/scss/layout/app-header';
+@import 'app/shared/scss/layout/app-footer';
+@import 'app/shared/scss/layout/layout';
 
 
 
 
-// Core
+// Typography
 // _________________________________________________________________________________________
-@import 'app/shared/styles/links';
-@import 'app/shared/styles/layout';
-@import 'app/shared/styles/typography';
-
-
-
-
-// Components
-// _________________________________________________________________________________________
-@import 'app/shared/styles/accordion';
-@import 'app/shared/styles/modal';
-@import 'app/shared/styles/navbar-primary';
-@import 'app/shared/styles/navbar-secondary';
-@import 'app/shared/styles/pills';
-@import 'app/shared/styles/tabs';
-@import 'app/shared/styles/tooltip';
+@import 'app/shared/scss/typography/headers';
+@import 'app/shared/scss/typography/paragraphs';

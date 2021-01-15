@@ -1,12 +1,14 @@
-@import 'colors';
+@import '../../../scss/root/colors';
 
 
 
-.tabs {
+
+:host {
+    display: block;
     margin: 2em 0;
 }
 
-.tabs__items {
+.items {
     border-bottom: solid 1px #ccc;
     display: flex; 
     list-style: none; 
@@ -14,11 +16,11 @@
     padding: 0;
 }
 
-.tabs__item {
+.item {
     margin-bottom: -1px;
 }
     
-.tabs__item-link {
+.item-link {
     background: #efefef;
     border-radius: 0.5em 0.5em 0 0;
     border: solid 1px #ccc;
@@ -28,45 +30,37 @@
     transition: background ease 0.25s;
 }
 
-.tabs__item-link:hover {
+.item-link:hover {
     background: $color__secondary--04c;
     border-bottom-color: #ccc;
     text-decoration: none;
 }
 
-.tabs__item-link:active {
+.item-link:active {
     color: $color__primary--02b;
 }
 
-.tabs__item-link:visited {
+.item-link:visited {
     color: $color__primary--02a;
 }
 
 // First Item
-.tabs__item:first-child .tabs__item-link {
+.item:first-child .item-link {
     margin-left: 0;
 }
 
 // Active
-.tabs__item-link--active {
+.item-link--active {
     background: white;
     border-bottom-color: transparent;
     color: $color__primary--03a;
 }
 
-.tabs__item-link--active:hover,
-.tabs__item-link--active:active,
-.tabs__item-link--active:visited {      
+.item-link--active:hover,
+.item-link--active:active,
+.item-link--active:visited {      
     background: white; 
     border-bottom-color: transparent;        
     color: $color__primary--03a;
     cursor: default;                
-}
-
-// Pane
-.tabs__pane {
-    border: solid 1px #ccc;
-    border-top: none;
-    overflow: hidden;
-    padding: 1em 1em 0;
 }

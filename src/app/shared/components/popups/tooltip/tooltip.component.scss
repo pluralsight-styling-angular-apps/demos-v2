@@ -1,16 +1,17 @@
-@import 'colors';
+
+@import '../../../scss/root/colors';
 
 
 
 
-.tooltip {
+:host {
     border-bottom: dotted 1px #8a8a8a;
     cursor: help;
     font-weight: bold;
     position: relative;
 }
 
-.tooltip__popup {
+.tooltip {
     background-color: $color__primary--03a;
     border-radius: 0;
     color: white;
@@ -29,7 +30,7 @@
     z-index: 1;
 }
 
-.tooltip__popup::before {
+.tooltip::before {
     border: inset 0.75rem;
     border-bottom-style: solid;
     border-color: transparent transparent $color__primary--03a;
@@ -45,7 +46,7 @@
 }
 
 // Opened
-.tooltip:hover .tooltip__popup {
+:host:hover .tooltip {
     opacity: 1;
     pointer-events: all;
 }
