@@ -13,18 +13,17 @@
 .accordion__label {
     display: flex;
     padding: 1em;
+}
 
-    &::after {
-        content: '\25bc';
-        max-width: 1em;
-        min-width: 1em;
-    }
+.accordion__label::after {
+    content: '\25bc';
+    max-width: 1em;
+    min-width: 1em;
+}
 
-    &-text {
-        flex: 1;
-        padding-right: 0.5em;
-    }
-
+.accordion__label-text {
+    flex: 1;
+    padding-right: 0.5em;
 }
 
 .accordion__pane {
