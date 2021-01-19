@@ -1,4 +1,3 @@
-import { AppModule } from './app.module';
 import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
