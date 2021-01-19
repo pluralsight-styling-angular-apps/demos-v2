@@ -1,13 +1,10 @@
-<ul class="items">
+<ul>
     <li 
-        *ngFor="let item of items; let i = index"
-        class="item"
-        [class.item--active]="activeIndex === i">
+        *ngFor="let item of items; let i = index">
         <a 
             (click)="selectItem(i)"
-            class="item__label"
-            [class.item__label--active]="activeIndex === i">
-            <span class="item__label-text">
+            [class.active]="activeIndex === i">
+            <span>
                 {{item.title}}
             </span>
         </a>

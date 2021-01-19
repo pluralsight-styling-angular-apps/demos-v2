@@ -8,44 +8,44 @@
     display: block;
 }
 
-.items {
+ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.item {        
+li {        
     border: solid 1px #ccc;
     border-top: none;
 }
 
-.item__label {
+a {
     @include g-root__link;
     display: flex;
     padding: 1em;
 }
 
-.item__label::after {
+a::after {
     content: '\25bc';
     max-width: 1em;
     min-width: 1em;
 }
 
-.item__label-text {
+span {
     flex: 1;
     padding-right: 0.5em;
 }
 
 // Hover
-.item__label:hover {
+a:hover {
     text-decoration: none;
 }
 
-.item__label:hover .item__label-text {
+a:hover span {
     text-decoration: underline;
 }
 
 // Active
-.item__label--active::after {
+a.active::after {
     content: '\25b2';
 }
