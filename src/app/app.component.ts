@@ -1,9 +1,10 @@
 import { AppModule } from './app.module';
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
     selector: 'saa-app',
-    templateUrl: './app.component.html'
+    templateUrl: './app.component.html',
+    encapsulation: ViewEncapsulation.None
 })
 
 export class AppComponent {
