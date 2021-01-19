@@ -1,78 +1,76 @@
-<header class="l-app-header">
-    <div class="l-container">
+<header class="header">
+    <div class="header__content">
         <h1
-            class="
-                l-app-header__title
-                t-h1">
+            class="header__title">
             Styling Angular Applications
         </h1>
-        <span class="l-app-header__sub-title">For Modern Angular Applications</span>
+        <span class="header__sub-title">For Modern Angular Applications</span>
   </div>
   <saa-navbar-primary></saa-navbar-primary>
 </header>
 
-<div class="l-container">
-    <div class="l-grid">
-        <div class="l-grid__item--08">
+<div class="content">
+    <div class="content__sections">
+        <div class="content__primary">
 
-            <h2 class="t-h2">Styles in Angular?</h2>
-            <p class="t-p">
+            <h2 class="content__title">Styles in Angular?</h2>
+            <p class="content__paragraph">
                 Angular revolutionizes the way that you architect CSS for modern web applications. But before you can become Angular styling ninjas, you need to take a step back and consider the many different ways that things can be done. In this course, Styling Angular Applications, you'll explore how the framework aligns with web components and what that means for adding styles to components and apps in general. Throughout this course you'll develop systems geared towards organization, scale, and maintainability for HTML and CSS within Angular apps. As you get more comfortable adding and styling components within these systems, you'll consider component themes and the ways that you can transform their look under certain circumstances. By the end of this course, you'll have a strong knowledge of how Angular processes CSS and the many different ways it can be leveraged as part of an overall design system for creating beautiful, organized, maintainable, and future proof web applications.
             </p>
 
             <saa-tabs>
                 <saa-tabs-pane title="Styles in Angular">
-                    <p class="t-p">
+                    <p class="content__paragraph">
                         A dive into how styles work in Angular. We cover how the different view encapsulation modes work, what they mean as far as the compiled code and scope, and why we may want to use each of them. We then move into the different ways that we can add styles to components, how Angular handles them, and how their priority flows through. After a complete exploration of styles in Angular we will move on to how Shadow DOM emulation is done, the CSS selectors that are emulated, what they look like when rendered in the browser, and how/why we would want to use them.
                     </p>
                 </saa-tabs-pane>
                 <saa-tabs-pane title="CSS/SCSS Architecture">
-                    <p class="t-p">
+                    <p class="content__paragraph">
                         Focus primarily on the default “Emulated” View Encapsulation mode for Angular components. We cover concepts regarding how global styles, variables, and mixins can be handled. We look at implementing systems for CSS selectors and naming conventions. We then create a system that will allow us to apply relative units with predictability. We explore creating well-organized and structured files and address the selectors we use as well as issues regarding style overrides. We explore ideas around code, file, and directory structure and organization. And finally, we leverage the ever polular SASS preprocessor to create relationships between the styles within individual components or across multiple components making them easier to edit and maintain over time.
                     </p>
                 </saa-tabs-pane>
                 <saa-tabs-pane title="Component Themes">
-                    <p class="t-p">
+                    <p class="content__paragraph">
                         Focus on creating components that have multiple themes and we explore some different ways that we can apply them. First we explicitly set the theme per instance by adding classes and properties to components and we explore what that this SCSS/CSS would look like. We then look at providing context aware themes for components that will automatically change styles based on their surroundings using the Host Context pseudo class. We then look at ways to provide inputs as properties then adding logic to check the classes added to apply the proper theme. We also explore explore ways to conditionally alter the markup of component templates when needed. And finally, we look at a completely different approach of component theming using CSS Custom Properties.
                     </p>
                 </saa-tabs-pane>
             </saa-tabs>
 
         </div>
-        <div class="l-grid__item--04">
+        <div class="content__secondary">
 
-            <h3 class="t-h3">Modules</h3>
+            <h3 class="content__sub-title">Modules</h3>
             <saa-accordion>
                 <saa-accordion-pane title="Module 01: Introduction">
-                    <p class="t-p">
+                    <p class="content__paragraph">
                         In this module we begin by discussing some of the problems with CSS and traditional web apps. We then move on to a brief discussion on web components. We explore how they attempt to solve some of these issues but, as we'll discover, thier features are lacking in browser support. This leads us into a brief introduction to Angular 2.0+ and how it currently bridges the gap allowing us to leverage many of the concepts of web components now. We explore how this new way of building requires us to completely revamp our thought process when it comes to CSS/SCSS styling and architecture.
                     </p>
                 </saa-accordion-pane>
                 <saa-accordion-pane title="Module 02: Styles in Angular">
-                    <p class="t-p">
+                    <p class="content__paragraph">
                         In this module we dive into how styles work in Angular 2.0+. We cover how the different view encapsulation modes work, what they mean as far as the compiled code and scope, and why we may want to use each of them. We then move into the different ways that we can add styles to components how Angular handles them, and how their priority flows through. After a complete exploration of styles in Angular we will move on to how Shadow DOM emulation is done, the CSS selectors that are emulated, what they look like when rendered in the browser, and how/why we would want to use them.
                     </p>
                 </saa-accordion-pane>
                 <saa-accordion-pane title="Module 03: CSS/SCSS Architecture">
-                    <p class="t-p">
+                    <p class="content__paragraph">
                         In this module we focus primarily on the default “Emulated” View Encapsulation mode for Angular components. We cover concepts regarding how global styles, variables, and mixins can be handled. We look at implementing systems for CSS selectors and naming conventions. We then create a system that will allow us to apply relative units with predictability. We explore creating well-organized and structured files and address the selectors we use as well as issues regarding style overrides. We explore ideas around code, file, and directory structure and organization. And finally, we leverage the ever polular SASS preprocessor to create relationships between the styles within individual components or across multiple components making them easier to edit and maintain over time.
                     </p>
                 </saa-accordion-pane>
                 <saa-accordion-pane title="Module 04: Component Themes">
-                    <p class="t-p">
+                    <p class="content__paragraph">
                         In this module we focus on creating components that have multiple themes and we explore some different ways that we can apply them. First we explicitly set the theme per instance by adding classes and properties to components and we explore what that this SCSS/CSS would look like. We then look at providing context aware themes for components that will automatically change styles based on their surroundings using the Host Context pseudo class. We then look at ways to provide inputs as properties then adding logic to check the classes added to apply the proper theme. We also explore explore ways to conditionally alter the markup of component templates when needed. And finally, we look at the future of component theming by taking a completely different approach using CSS Custom Properties.
                     </p>
                 </saa-accordion-pane>
                 <saa-accordion-pane title="Module 05: It's a Wrap">
-                    <p class="t-p">
+                    <p class="content__paragraph">
                         In this module we wrap everything up and recap at a high level the core concepts and takeaways from the course so that you can get on your merry way armed and ready to style any Angular application!
                     </p>
                 </saa-accordion-pane>
             </saa-accordion>
 
-            <h3 class="t-h3">Prerequisites</h3>
+            <h3 class="content__sub-title">Prerequisites</h3>
             <saa-pills [pills]="pills"></saa-pills>
-            <p class="t-p">
+            <p class="content__paragraph">
                 This course assumes an understanding of 
                 <saa-tooltip>HTML<span slot-message>Hyper Text Markup Language. Describes the structure of Web pages using markup.</span></saa-tooltip>, 
                 <saa-tooltip>CSS<span slot-message>Cascading Style Sheets. Describes how HTML elements are to be displayed on screen, paper, or in other media.</span>
@@ -86,10 +84,10 @@
 
 </div>
 
-<footer class="l-app-footer">
+<footer class="footer">
     <saa-navbar-secondary></saa-navbar-secondary>
-    <div class="l-container">
-        <span class="l-app-footer__title">Styling Angular Applications</span>
-        <span class="l-app-footer__sub-title">For Modern Angular Applications</span>
+    <div class="footer__content">
+        <span class="footer__title">Styling Angular Applications</span>
+        <span class="footer__sub-title">For Modern Angular Applications</span>
     </div>
 </footer>

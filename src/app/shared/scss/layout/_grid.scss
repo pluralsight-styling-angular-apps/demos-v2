@@ -1,0 +1,73 @@
+$spacing--xAxis: 2em;
+$spacing--yAxis: 2em;
+
+
+
+
+// Grid Container
+// _________________________________________________________________________________________
+@mixin g-layout__grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -($spacing--xAxis / 2);
+    margin-right: -($spacing--xAxis / 2);
+}
+
+
+
+
+// Grid Items
+// _________________________________________________________________________________________
+@mixin g-layout__grid__item--base($width) {
+    flex: 1 calc(#{$width} - 1em);
+    margin: 0 ($spacing--xAxis / 2) $spacing--yAxis;
+    max-width: calc(#{$width} - #{$spacing--xAxis});
+}
+
+@mixin g-layout__grid__item--01 {
+    @include g-layout__grid__item--base(8.333333333%);
+}
+
+@mixin g-layout__grid__item--02 {
+    @include g-layout__grid__item--base(16.666666667%);
+}
+
+@mixin g-layout__grid__item--03 {
+    @include g-layout__grid__item--base(25%);
+}
+
+@mixin g-layout__grid__item--04 {
+    @include g-layout__grid__item--base(33.333333333%);
+}
+
+@mixin g-layout__grid__item--05 {
+    @include g-layout__grid__item--base(41.666666667%);
+}
+
+@mixin g-layout__grid__item--06 {
+    @include g-layout__grid__item--base(50%);
+}
+
+@mixin g-layout__grid__item--07 {
+    @include g-layout__grid__item--base(58.333333333%);
+}
+
+@mixin g-layout__grid__item--08 {
+    @include g-layout__grid__item--base(66.666666667%);
+}
+
+@mixin g-layout__grid__item--09 {
+    @include g-layout__grid__item--base(75%);
+}
+
+@mixin g-layout__grid__item--10 {
+    @include g-layout__grid__item--base(83.333333333%);
+}
+
+@mixin g-layout__grid__item--11 {
+    @include g-layout__grid__item--base(91.666666667%);
+}
+
+@mixin g-layout__grid__item--12 {
+    @include g-layout__grid__item--base(100%);
+}

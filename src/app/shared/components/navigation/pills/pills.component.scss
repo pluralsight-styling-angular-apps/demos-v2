@@ -8,11 +8,14 @@
     margin: 1em 0; 
     padding: 0;
 }
-    
+
+        
 .item-link {
     background: #efefef;
-    background: rgba($color__secondary--04c, 0.6);
+    background: rgba($g-root__color--secondary--04c, 0.6);
     border-radius: 0.5em;
+    color: $g-root__color--primary--02a;
+    cursor: pointer;
     display: block;
     margin: 0 0.2em;
     padding: 0.5em 1em;
@@ -20,16 +23,17 @@
 }
 
 .item-link:hover {
-    background: $color__secondary--04c;
+    background: $g-root__color--secondary--04c;
+    color: $g-root__color--primary--02b;
     text-decoration: none;
 }
 
 .item-link:active {
-    color: $color__primary--02b;
+    color: $g-root__color--primary--02b;
 }
 
 .item-link:visited {
-    color: $color__primary--02a;
+    color: $g-root__color--primary--02a;
 }
 
 // First Item
@@ -39,13 +43,13 @@
 
 // Selected
 .item-link--selected {
-    background: $color__primary--02a;
+    background: $g-root__color--primary--02a;
     color: white;
 }
 
 .item-link--selected:hover,
 .item-link--selected:active {      
-    background: $color__primary--02a;          
+    background: $g-root__color--primary--02a;          
     color: white;
     cursor: default;                
 }

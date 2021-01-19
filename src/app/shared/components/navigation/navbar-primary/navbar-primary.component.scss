@@ -1,20 +1,22 @@
 @import '../../../scss/root/colors';
+@import '../../../scss/layout/container';
 
 
 
 
 :host {
-    background: $color__primary--01a;
+    background: $g-root__color--primary--01a;
     display: block; 
     margin-top: 1.8em; 
     padding: 1em 0;
 }
 
 .items {
+    @include g-layout__container;
     display: flex; 
     list-style: none; 
-    margin: 0; 
-    padding: 0;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 .item {

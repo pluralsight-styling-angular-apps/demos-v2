@@ -24,6 +24,8 @@
     background: #efefef;
     border-radius: 0.5em 0.5em 0 0;
     border: solid 1px #ccc;
+    color: $g-root__color--primary--02a;
+    cursor: pointer;
     display: block;
     margin: 0 0.2em;
     padding: 1em;
@@ -31,17 +33,18 @@
 }
 
 .item-link:hover {
-    background: $color__secondary--04c;
+    background: $g-root__color--secondary--04c;
     border-bottom-color: #ccc;
+    color: $g-root__color--primary--02b;
     text-decoration: none;
 }
 
 .item-link:active {
-    color: $color__primary--02b;
+    color: $g-root__color--primary--02b;
 }
 
 .item-link:visited {
-    color: $color__primary--02a;
+    color: $g-root__color--primary--02a;
 }
 
 // First Item
@@ -53,7 +56,7 @@
 .item-link--active {
     background: white;
     border-bottom-color: transparent;
-    color: $color__primary--03a;
+    color: $g-root__color--primary--03a;
 }
 
 .item-link--active:hover,
@@ -61,6 +64,6 @@
 .item-link--active:visited {      
     background: white; 
     border-bottom-color: transparent;        
-    color: $color__primary--03a;
+    color: $g-root__color--primary--03a;
     cursor: default;                
 }

@@ -1,18 +1,18 @@
-.t-h1 {
+@mixin g-root__h1 {
     font-size: 2.827em;
     font-weight: normal;
     line-height: 1.2;
     margin: 1em 0 0.25em;
 }
 
-.t-h2 {
+@mixin g-root__h2 {
     font-size: 1.999em;
     font-weight: normal;
     line-height: 1.2;
     margin: 1em 0 0.5em;
 }
 
-.t-h3 {
+@mixin g-root__h3 {
     font-size: 1.414em;
     font-weight: normal;
     line-height: 1.4;

@@ -1,13 +1,17 @@
+@import '../../../scss/layout/container';
+
+
+
+
 :host {
     display: block;
     padding: 1em 0 1.8em;
 }
 
 .items {
+    @include g-layout__container;
     display: flex; 
     list-style: none; 
-    margin: 0; 
-    padding: 0;
 }
 
 .item {

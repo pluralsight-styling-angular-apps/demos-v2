@@ -1,0 +1,84 @@
+@import 'shared/scss/root/colors';
+@import 'shared/scss/layout/container';
+@import 'shared/scss/layout/grid';
+@import 'shared/scss/typography/headers';
+@import 'shared/scss/typography/paragraphs';
+
+
+
+
+// Header
+.header {
+    background: $g-root__color--secondary--04a;
+    display: block;
+    font-family: arial, sans-serif;
+    overflow: hidden;
+    margin-bottom: 1.8em;
+}
+
+.header__content {
+    @include g-layout__container;
+}
+
+.header__title {
+    @include g-root__h1;
+    color: white;
+}
+
+.header__sub-title {
+    color: #888;
+}
+
+// Content
+.content {
+    @include g-layout__container;
+}
+
+.content__sections {
+    @include g-layout__grid;
+}
+
+.content__primary {
+    @include g-layout__grid__item--08;
+}
+
+.content__secondary {
+    @include g-layout__grid__item--04;
+}
+
+.content__title {
+    @include g-root__h2;
+}
+
+.content__sub-title {
+    @include g-root__h3;
+}
+
+.content__paragraph {
+    @include g-root__paragraph
+}
+
+// Footer
+.footer {
+    background: $g-root__color--secondary--04a;
+    color: #555;
+    display: block;
+    font-family: arial, sans-serif;
+    margin-top: 1.8em;
+    overflow: hidden;
+    padding: 1em 0 3em;
+}
+
+.footer__content {
+    @include g-layout__container;
+}
+
+.footer__title {
+    border-top: solid 1px #444;
+    display: block;
+    padding: 2.5em 0 0.3em;
+}
+
+.footer__sub-title {
+    font-size: 0.8em;
+}
