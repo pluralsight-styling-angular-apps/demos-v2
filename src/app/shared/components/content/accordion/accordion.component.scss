@@ -8,44 +8,67 @@
     display: block;
 }
 
-ul {
+.items {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-li {        
+.item {        
     border: solid 1px #ccc;
     border-top: none;
 }
 
-a {
+.item__label {
     @include g-root__link;
     display: flex;
-    padding: 1em;
+    padding: 16px;
 }
 
-a::after {
+.item__label::after {
     content: '\25bc';
-    max-width: 1em;
-    min-width: 1em;
+    max-width: 16px;
+    min-width: 16px;
 }
 
-span {
+.item__label-text {
     flex: 1;
-    padding-right: 0.5em;
+    padding-right: 8px;
 }
 
 // Hover
-a:hover {
+.item__label:hover {
     text-decoration: none;
 }
 
-a:hover span {
+.item__label:hover .item__label-text {
     text-decoration: underline;
 }
 
 // Active
-a.active::after {
+.item__label--active::after {
     content: '\25b2';
+}
+
+
+
+
+// Media Queries
+// _________________________________________________________________________________________
+@media (max-width: 928px) {
+
+    .item__label {
+        font-size: 13px;
+        padding: 13px;
+    }
+
+    .item__label::after {
+        max-width: 13px;
+        min-width: 13px;
+    }
+
+    .item__label-text {
+        padding-right: 5px;
+    }
+
 }
