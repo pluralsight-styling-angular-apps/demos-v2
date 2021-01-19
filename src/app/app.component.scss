@@ -38,14 +38,6 @@
     @include g-layout__grid;
 }
 
-.content__primary {
-    @include g-layout__grid__item--08;
-}
-
-.content__secondary {
-    @include g-layout__grid__item--04;
-}
-
 .content__title {
     @include g-root__h2;
 }
@@ -56,6 +48,32 @@
 
 .content__paragraph {
     @include g-root__paragraph
+}
+
+// Large Viewports
+@media (min-width: 52rem) {
+
+    .content__primary {
+        @include g-layout__grid__item--08;
+    }
+
+    .content__secondary {
+        @include g-layout__grid__item--04;
+    }
+
+}
+
+// Small Viewports
+@media (max-width: 52rem) {
+
+    .content__primary {
+        @include g-layout__grid__item--12;
+    }
+
+    .content__secondary {
+        @include g-layout__grid__item--12;
+    }
+
 }
 
 // Footer
