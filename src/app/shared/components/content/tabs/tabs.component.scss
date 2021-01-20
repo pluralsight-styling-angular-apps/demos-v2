@@ -21,7 +21,7 @@
     margin-bottom: -1px;
 }
     
-.item-link {
+.item__link {
     background: #efefef;
     border-radius: 0.5em 0.5em 0 0;
     border: solid 1px #ccc;
@@ -33,36 +33,36 @@
     transition: background ease 0.25s;
 }
 
-.item-link:hover {
+.item__link:hover {
     background: $g-root__color--secondary--04c;
     border-bottom-color: #ccc;
     color: $g-root__color--primary--02b;
     text-decoration: none;
 }
 
-.item-link:active {
+.item__link:active {
     color: $g-root__color--primary--02b;
 }
 
-.item-link:visited {
+.item__link:visited {
     color: $g-root__color--primary--02a;
 }
 
 // First Item
-.item:first-child .item-link {
+.item:first-child .item__link {
     margin-left: 0;
 }
 
 // Active
-.item-link--active {
+.item__link--active {
     background: white;
     border-bottom-color: transparent;
     color: $g-root__color--primary--03a;
 }
 
-.item-link--active:hover,
-.item-link--active:active,
-.item-link--active:visited {      
+.item__link--active:hover,
+.item__link--active:active,
+.item__link--active:visited {      
     background: white; 
     border-bottom-color: transparent;        
     color: $g-root__color--primary--03a;
