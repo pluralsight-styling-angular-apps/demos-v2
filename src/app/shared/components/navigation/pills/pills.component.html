@@ -5,8 +5,8 @@
         [ngClass]="{'item--selected': selectedPill === pill.label}">
         <a 
             (click)="togglePill(pill.label)"
-            class="item-link"
-            [ngClass]="{'item-link--selected': selectedPill === pill.label || !selectedPill && i === 0}">
+            class="item__link"
+            [ngClass]="{'item__link--selected': selectedPill === pill.label || !selectedPill && i === 0}">
             {{pill.label}}
         </a>
     </li>
