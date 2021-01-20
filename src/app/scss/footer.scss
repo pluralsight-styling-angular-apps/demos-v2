@@ -1,0 +1,30 @@
+@import '../shared/scss/root/colors';
+@import '../shared/scss/layout/container';
+
+
+
+
+.footer {
+    background: $g-root__color--secondary--04a;
+    color: #555;
+    display: block;
+    font-family: arial, sans-serif;
+    margin-top: 1.8em;
+    overflow: hidden;
+    padding: 1em 0 3em;
+
+    &__content {
+        @include g-layout__container;
+    }
+
+    &__title {
+        border-top: solid 1px #444;
+        display: block;
+        padding: 2.5em 0 0.3em;
+    }
+
+    &__sub-title {
+        font-size: 0.8em;
+    }
+
+}

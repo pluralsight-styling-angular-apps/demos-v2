@@ -1,0 +1,18 @@
+:host {
+    border-top: solid 0.0625em #ccc;
+    display: block;
+    font-size: 1rem;
+}
+
+
+
+
+// Media Queries
+// _________________________________________________________________________________________
+@media (max-width: 58em) {
+
+    :host {
+        font-size: 0.8125em;
+    }
+
+}
