@@ -3,10 +3,6 @@
 
 
 
-:host {
-    font-size: 1rem;
-}
-
 .shield {
     background: rgba(black, 0.75);
     bottom: 0;
@@ -22,6 +18,7 @@
     background: $g-root__color--primary--01a;
     border-radius: 0.5em;
     color: white;
+    font-size: 1rem;
     height: 66.7vh;
     left: 50%;
     min-width: 33.3125rem;
@@ -36,38 +33,39 @@
         color: white;
     }
 
-}
+    &__close {
+        border: solid 1px white;
+        border-radius: 50%;
+        cursor: pointer;
+        display: block;
+        height: 1.7em;
+        overflow: hidden;
+        position: absolute;
+        right: 0.5em;
+        text-indent: -9999px;
+        top: 0.5em;
+        width: 1.7em;
 
-.modal__close {
-    border: solid 1px white;
-    border-radius: 50%;
-    cursor: pointer;
-    display: block;
-    height: 1.7em;
-    overflow: hidden;
-    position: absolute;
-    right: 0.5em;
-    text-indent: -9999px;
-    top: 0.5em;
-    width: 1.7em;
-}
+        &::before,
+        &::after {
+            background: white;
+            content: "";
+            height: 0.125em;
+            left: 0.25em;
+            margin-top: -0.0625em;
+            position: absolute;
+            top: 50%;
+            right: 0.25em;
+        }
 
-.modal__close::before,
-.modal__close::after {
-    background: white;
-    content: "";
-    height: 0.125em;
-    left: 0.25em;
-    margin-top: -0.0625em;
-    position: absolute;
-    top: 50%;
-    right: 0.25em;
-}
+        &::before {
+            transform: rotate(45deg);
+        }
 
-.modal__close::before {
-    transform: rotate(45deg);
-}
+        &::after {
+            transform: rotate(-45deg);
+        }
 
-.modal__close::after {
-    transform: rotate(-45deg);
+    }
+
 }

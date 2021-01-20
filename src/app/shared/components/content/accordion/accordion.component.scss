@@ -4,7 +4,7 @@
 
 
 :host {
-    border-top: solid 1px #ccc;
+    border-top: solid 0.0625em #ccc;
     display: block;
     font-size: 1rem;
 }
@@ -16,39 +16,41 @@
 }
 
 .item {        
-    border: solid 1px #ccc;
+    border: solid 0.0625em #ccc;
     border-top: none;
-}
 
-.item__label {
-    @include g-root__link;
-    display: flex;
-    padding: 16px;
-}
+    &__label {
+        @include g-root__link;
+        display: flex;
+        padding: 1em;
 
-.item__label::after {
-    content: '\25bc';
-    max-width: 16px;
-    min-width: 16px;
-}
+        &::after {
+            content: '\25bc';
+            max-width: 1em;
+            min-width: 1em;
+        }
 
-.item__label-text {
-    flex: 1;
-    padding-right: 8px;
-}
+        &-text {
+            flex: 1;
+            padding-right: 0.5em;
+        }
 
-// Hover
-.item__label:hover {
-    text-decoration: none;
-}
+        // Hover
+        &:hover {
+            text-decoration: none;
+        }
 
-.item__label:hover .item__label-text {
-    text-decoration: underline;
-}
+        &:hover &-text {
+            text-decoration: underline;
+        }
 
-// Active
-.item__label--active::after {
-    content: '\25b2';
+        // Active
+        &--active::after {
+            content: '\25b2';
+        }
+
+    }
+
 }
 
 
@@ -56,20 +58,10 @@
 
 // Media Queries
 // _________________________________________________________________________________________
-@media (max-width: 928px) {
+@media (max-width: 58em) {
 
-    .item__label {
-        font-size: 13px;
-        padding: 13px;
-    }
-
-    .item__label::after {
-        max-width: 13px;
-        min-width: 13px;
-    }
-
-    .item__label-text {
-        padding-right: 5px;
+    :host {
+        font-size: 0.8125em;
     }
 
 }

@@ -21,28 +21,30 @@
 
 .item {
     padding: 0 1em;
-}
 
-.item__icon {
-    fill: white;
-    height: 0.8em;
-    margin-right: 0.25em;
-    width: 0.8em;
-}
+    &__icon {
+        fill: white;
+        height: 0.8em;
+        margin-right: 0.25em;
+        width: 0.8em;
+    }
 
-.item__link {
-    color: white; 
-    cursor: pointer;
-    font-size: 1.2em;    
-    text-decoration: none;
-}
-        
-.item__link:hover {
-    color: white; 
-    text-decoration: underline;
-}
+    &__link {
+        color: white; 
+        cursor: pointer;
+        font-size: 1.2em;    
+        text-decoration: none;
+            
+        &:hover {
+            color: white; 
+            text-decoration: underline;
+        }
 
-// First
-.item:first-child {
-    padding-left: 0;
+    }
+
+    // First
+    &:first-child {
+        padding-left: 0;
+    }
+
 }

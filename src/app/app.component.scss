@@ -7,6 +7,13 @@
 
 
 
+:host {
+    font-size: 1rem;
+}
+
+
+
+
 // Header
 .header {
     background: $g-root__color--secondary--04a;
@@ -14,66 +21,66 @@
     font-family: arial, sans-serif;
     overflow: hidden;
     margin-bottom: 1.8em;
-}
 
-.header__content {
-    @include g-layout__container;
-}
+    &__content {
+        @include g-layout__container;
+    }
 
-.header__title {
-    @include g-root__h1;
-    color: white;
-}
+    &__title {
+        @include g-root__h1;
+        color: white;
+    }
 
-.header__sub-title {
-    color: #888;
+    &__sub-title {
+        color: #888;
+    }
+
 }
 
 // Content
 .content {
     @include g-layout__container;
-}
 
-.content__sections {
-    @include g-layout__grid;
-}
-
-.content__title {
-    @include g-root__h2;
-}
-
-.content__sub-title {
-    @include g-root__h3;
-}
-
-.content__paragraph {
-    @include g-root__paragraph
-}
-
-// Large Viewports
-@media (min-width: 52rem) {
-
-    .content__primary {
-        font-size: 1.5em;
-        @include g-layout__grid__item--08;
+    &__sections {
+        @include g-layout__grid;
     }
 
-    .content__secondary {
-        @include g-layout__grid__item--04;
+    &__title {
+        @include g-root__h2;
     }
 
-}
-
-// Small Viewports
-@media (max-width: 52rem) {
-
-    .content__primary {
-        font-size: 1.5em;
-        @include g-layout__grid__item--12;
+    &__sub-title {
+        @include g-root__h3;
     }
 
-    .content__secondary {
-        @include g-layout__grid__item--12;
+    &__paragraph {
+        @include g-root__paragraph
+    }
+
+    // Large Viewports
+    @media (min-width: 52rem) {
+
+        &__primary {
+            @include g-layout__grid__item--08;
+        }
+
+        &__secondary {
+            @include g-layout__grid__item--04;
+        }
+
+    }
+
+    // Small Viewports
+    @media (max-width: 52rem) {
+
+        &__primary {
+            @include g-layout__grid__item--12;
+        }
+
+        &__secondary {
+            @include g-layout__grid__item--12;
+        }
+
     }
 
 }
@@ -87,18 +94,19 @@
     margin-top: 1.8em;
     overflow: hidden;
     padding: 1em 0 3em;
-}
 
-.footer__content {
-    @include g-layout__container;
-}
+    &__content {
+        @include g-layout__container;
+    }
 
-.footer__title {
-    border-top: solid 1px #444;
-    display: block;
-    padding: 2.5em 0 0.3em;
-}
+    &__title {
+        border-top: solid 1px #444;
+        display: block;
+        padding: 2.5em 0 0.3em;
+    }
 
-.footer__sub-title {
-    font-size: 0.8em;
+    &__sub-title {
+        font-size: 0.8em;
+    }
+
 }

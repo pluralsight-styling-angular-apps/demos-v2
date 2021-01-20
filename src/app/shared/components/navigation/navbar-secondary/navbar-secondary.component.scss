@@ -17,20 +17,22 @@
 
 .item {
     padding: 0 1em;
-}
 
-.item__link {
-    color: white; 
-    cursor: pointer;    
-    text-decoration: none;
-}
-        
-.item__link:hover {
-    color: white;
-    text-decoration: underline;
-}
+    &__link {
+        color: white; 
+        cursor: pointer;    
+        text-decoration: none;
+            
+        &:hover {
+            color: white;
+            text-decoration: underline;
+        }
 
-// First
-.item:first-child {
-    padding-left: 0;
+    }
+
+    // First
+    &:first-child {
+        padding-left: 0;
+    }
+
 }
