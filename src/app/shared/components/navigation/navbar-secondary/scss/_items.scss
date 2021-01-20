@@ -1,3 +1,4 @@
+
 @import '../../../../scss/layout/container';
 
 
@@ -27,6 +28,39 @@
     // First
     &:first-child {
         padding-left: 0;
+    }
+
+    // Last
+    &:last-child {
+        padding-left: 0;
+    }
+
+    // Search
+    &--search {
+        margin-left: auto;
+    }
+
+    &__search {
+        align-items: center;
+        display: flex;
+        margin: 0;
+    
+        &-field {
+            background: rgba(white, 0.25);
+            border: none;
+            border-radius: 0.3em;
+            color: white;
+            padding: 0.25em 0.5em;
+            width: 14em;
+        }
+
+        &-icon {
+            fill: white;
+            height: 0.8em;
+            margin-left: 0.5em;
+            width: 0.8em;
+        }
+
     }
 
 }
