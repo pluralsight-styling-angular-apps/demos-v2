@@ -2,11 +2,11 @@
     <li 
         *ngFor="let tab of tabs"
         class="item"
-        [class.item--active]="tab.active">
+        [ngClass]="tab.active ? 'item--active' : 'item--inactive'">
         <a 
             (click)="selectTab(tab)"
             class="item__link"
-            [class.item__link--active]="tab.active">
+            [ngClass]="tab.active ? 'item__link--active' : 'item__link--inactive'">
             {{tab.title}}
         </a>
     </li>

@@ -21,29 +21,34 @@
     margin-bottom: -1px;
     
     &__link {
-        background: #efefef;
         border-radius: 0.5em 0.5em 0 0;
         border: solid 1px #ccc;
-        color: $g-root__color--primary--02a;
-        cursor: pointer;
         display: block;
         margin: 0 0.2em;
         padding: 1em;
         transition: background ease 0.25s;
 
-        &:hover {
-            background: $g-root__color--secondary--04c;
-            border-bottom-color: #ccc;
-            color: $g-root__color--primary--02b;
-            text-decoration: none;
-        }
-
-        &:active {
-            color: $g-root__color--primary--02b;
-        }
-
-        &:visited {
+        // Inactive
+        &--inactive {
+            background: #efefef;
             color: $g-root__color--primary--02a;
+            cursor: pointer;
+    
+            &:hover {
+                background: $g-root__color--secondary--04c;
+                border-bottom-color: #ccc;
+                color: $g-root__color--primary--02b;
+                text-decoration: none;
+            }
+    
+            &:active {
+                color: $g-root__color--primary--02b;
+            }
+    
+            &:visited {
+                color: $g-root__color--primary--02a;
+            }
+    
         }
 
         // Active

@@ -2,11 +2,11 @@
     <li 
         *ngFor="let pill of pills, let i = index"
         class="item"
-        [ngClass]="{'item--selected': selectedPill === pill.label}">
+        [ngClass]="pill.label || !selectedPill && i === 0 ? 'item--selected' : 'item--unselected'">
         <a 
             (click)="togglePill(pill.label)"
             class="item__link"
-            [ngClass]="{'item__link--selected': selectedPill === pill.label || !selectedPill && i === 0}">
+            [ngClass]="selectedPill === pill.label || !selectedPill && i === 0 ? 'item__link--selected' : 'item__link--unselected'">
             {{pill.label}}
         </a>
     </li>

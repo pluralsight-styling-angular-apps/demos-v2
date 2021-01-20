@@ -25,7 +25,6 @@
         padding: 1em;
 
         &::after {
-            content: '\25bc';
             max-width: 1em;
             min-width: 1em;
         }
@@ -42,6 +41,11 @@
 
         &:hover &-text {
             text-decoration: underline;
+        }
+
+        // Inactive
+        &--inactive::after {
+            content: '\25bc';
         }
 
         // Active
