@@ -5,8 +5,8 @@
         [ngClass]="pill.label || !selectedPill && i === 0 ? 'item--selected' : 'item--unselected'">
         <a 
             (click)="togglePill(pill.label)"
-            class="item-link"
-            [ngClass]="selectedPill === pill.label || !selectedPill && i === 0 ? 'item-link--selected' : 'item-link--unselected'">
+            class="item__link"
+            [ngClass]="selectedPill === pill.label || !selectedPill && i === 0 ? 'item__link--selected' : 'item__link--unselected'">
             {{pill.label}}
         </a>
     </li>

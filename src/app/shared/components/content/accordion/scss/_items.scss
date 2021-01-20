@@ -28,11 +28,7 @@
             padding-right: 0.5em;
         }
 
-    }
-
-    // Hover
-    &__label {
-    
+        // Hover
         &:hover {
             text-decoration: none;
         }
@@ -41,16 +37,17 @@
             text-decoration: underline;
         }
 
-    }
 
-    // Inactive
-    &__label--inactive::after {
-        content: '\25bc';
-    }
+        // Inactive
+        &--inactive::after {
+            content: '\25bc';
+        }
 
-    // Active
-    &__label--active::after {
-        content: '\25b2';
+        // Active
+        &--active::after {
+            content: '\25b2';
+        }
+
     }
 
 }
