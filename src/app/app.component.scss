@@ -68,6 +68,7 @@
 @media (max-width: 52rem) {
 
     .content__primary {
+        font-size: 1.5em;
         @include g-layout__grid__item--12;
     }
 
