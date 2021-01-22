@@ -1,4 +1,3 @@
-@import '../../../../scss/root/colors';
 @import '../../../../scss/typography/headers';
 @import '../../../../scss/typography/paragraphs';
 
@@ -13,7 +12,7 @@
 }
 
 .item {
-    border: solid 0.0625em #ccc;
+    border: solid 0.0625em;
     padding: 1em;
 
     &__thumbnail {
@@ -34,28 +33,12 @@
     }
 
     &__button {
-        background: $g-root__color--primary--02a;
         border-radius: 0.5em;
         color: white;
         cursor: pointer;
         display: inline-block;
         padding: 1em 1.4em;
         transition: background ease 0.25s;
-
-        &:hover {
-            background: $g-root__color--primary--02b;
-        }
-
-    }
-
-    // First Item
-    &:first-child &__thumbnail {
-        background: $g-root__color--secondary--01a;
-    }
-
-    // Last Item
-    &:last-child &__thumbnail {
-        background: $g-root__color--secondary--03a;
     }
 
 }
