@@ -3,23 +3,19 @@
 
 
 
-:host(.layout--02) {
+.items {
+    @include g-layout__grid;
+}
 
-    .items {
-        @include g-layout__grid;
+.item {
+    @include g-layout__grid__item--06;
+
+    &__image {
+        height: 12em;
     }
 
-    .item {
-        @include g-layout__grid__item--06;
-
-        &__image {
-            height: 12em;
-        }
-
-        &__content {
-            padding: 0.5em;
-        }
-
+    &__content {
+        padding: 0.5em;
     }
 
 }
