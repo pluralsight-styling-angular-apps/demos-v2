@@ -7,6 +7,7 @@ import { AccordionComponent }       from './shared/components/content/accordion/
 import { AccordionPaneComponent }   from './shared/components/content/accordion/accordion-pane/accordion-pane.component';
 import { TabsComponent }            from './shared/components/content/tabs/tabs.component';
 import { TabsPaneComponent }        from './shared/components/content/tabs/tabs-pane/tabs-pane.component';
+import { ThumbnailListComponent }   from './shared/components/content/thumbnail-list/thumbnail-list.component';
 
 // Navigation Components
 import { NavBarPrimaryComponent }   from './shared/components/navigation/navbar-primary/navbar-primary.component';
@@ -25,6 +26,7 @@ import { ToolTipComponent }         from './shared/components/popups/tooltip/too
       AccordionPaneComponent,
       TabsComponent,
       TabsPaneComponent,
+      ThumbnailListComponent,
       NavBarPrimaryComponent,
       NavBarSecondaryComponent,
       PillsComponent,
