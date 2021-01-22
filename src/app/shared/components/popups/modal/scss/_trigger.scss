@@ -1,0 +1,8 @@
+@import '../../../../scss/root/links';
+
+
+
+
+.trigger {
+    @include g-root__link;
+}
