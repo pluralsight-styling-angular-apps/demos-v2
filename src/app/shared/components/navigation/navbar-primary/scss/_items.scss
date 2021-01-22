@@ -3,6 +3,15 @@
 
 
 
+// Settings
+// _________________________________________________________________________________________
+$navbar-primary__icon-size: 0.8em;
+
+
+
+
+// Items
+// _________________________________________________________________________________________
 .items {
     @include g-layout__container;
     list-style: none; 
@@ -24,11 +33,10 @@
     }
 
     &__icon {
-        $size: 0.8em;
         fill: white;
-        height: $size;
+        height: $navbar-primary__icon-size;
         margin-right: 0.25em;
-        width: $size;
+        width: $navbar-primary__icon-size;
     }
 
     // Search
@@ -52,9 +60,9 @@
 
         &-icon {
             fill: white;
-            height: 0.8em;
+            height: $navbar-primary__icon-size;
             margin-left: 0.5em;
-            width: 0.8em;
+            width: $navbar-primary__icon-size;
         }
 
     }
