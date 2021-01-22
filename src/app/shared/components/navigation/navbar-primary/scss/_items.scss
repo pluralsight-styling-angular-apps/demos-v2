@@ -10,6 +10,17 @@ $navbar-primary__icon-size: 0.8em;
 
 
 
+// Mixins
+// _________________________________________________________________________________________
+@mixin navbar-primary__icon {
+    fill: white;
+    height: $navbar-primary__icon-size;
+    width: $navbar-primary__icon-size;
+}
+
+
+
+
 // Items
 // _________________________________________________________________________________________
 .items {
@@ -33,10 +44,8 @@ $navbar-primary__icon-size: 0.8em;
     }
 
     &__icon {
-        fill: white;
-        height: $navbar-primary__icon-size;
+        @include navbar-primary__icon;
         margin-right: 0.25em;
-        width: $navbar-primary__icon-size;
     }
 
     // Search
@@ -59,10 +68,8 @@ $navbar-primary__icon-size: 0.8em;
         }
 
         &-icon {
-            fill: white;
-            height: $navbar-primary__icon-size;
+            @include navbar-primary__icon;
             margin-left: 0.5em;
-            width: $navbar-primary__icon-size;
         }
 
     }
