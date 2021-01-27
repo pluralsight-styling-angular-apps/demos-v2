@@ -21,28 +21,28 @@
         margin: 0 0.2em;
         padding: 1em;
         transition: background ease 0.25s;
-
+        
         // Inactive
         &--inactive {
             background: #efefef;
             color: $g-root__color--primary--02a;
             cursor: pointer;
-    
+
             &:hover {
                 background: $g-root__color--secondary--04c;
                 border-bottom-color: #ccc;
                 color: $g-root__color--primary--02b;
                 text-decoration: none;
             }
-    
+
             &:active {
                 color: $g-root__color--primary--02b;
             }
-    
+
             &:visited {
                 color: $g-root__color--primary--02a;
             }
-    
+
         }
 
         // Active
@@ -50,7 +50,7 @@
             background: white;
             border-bottom-color: transparent;
             color: $g-root__color--primary--03a;
-    
+
             &:hover,
             &:active,
             &:visited {      
@@ -59,7 +59,7 @@
                 color: $g-root__color--primary--03a;
                 cursor: default;                
             }
-    
+
         }
 
     }
@@ -67,6 +67,61 @@
     // First Item
     &:first-child &__link {
         margin-left: 0;
+    }
+
+}
+
+
+
+
+// Variations
+// _________________________________________________________________________________________
+:host-context(saa-modal.color--02) {
+
+    $color__foreground: white;
+    $color__background: $g-root__color--primary--01a;
+
+    .items {
+        border-bottom-color: $color__foreground;
+    }
+
+    .item__link {
+        border-color: $color__foreground;
+        border-bottom-color: transparent;
+
+        // Inactive
+        &--inactive {
+            background: rgba($color__foreground, 0.3);
+            color: $color__foreground;
+
+            &:hover {
+                background: rgba($color__foreground, 0.5);
+                border-bottom-color: $color__foreground;
+                color: $color__foreground;
+            }
+
+            &:active,
+            &:visited {
+                color: $color__foreground;
+            }
+
+        }
+
+        // Active
+        &--active {
+            background: $color__background;
+            color: $color__foreground;
+
+            &:hover,
+            &:active,
+            &:visited {      
+                background: $color__background; 
+                color: $color__foreground;
+            }
+
+
+        }
+
     }
 
 }
