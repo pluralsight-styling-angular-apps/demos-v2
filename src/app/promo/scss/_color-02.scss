@@ -1,0 +1,14 @@
+@import '../../shared/scss/root/colors';
+
+
+
+:host(.color--02) {
+    background: $g-root__color--secondary--01a;
+    color: white;
+    padding: 1em;
+
+    .content {
+        border-color: white;
+    }
+    
+}
