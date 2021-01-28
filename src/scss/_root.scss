@@ -9,3 +9,11 @@ html {
 body {
     color: #666;
 }
+
+@media (max-width: 58em) {
+
+    html {
+        font-size: 80%;
+    }
+
+}
