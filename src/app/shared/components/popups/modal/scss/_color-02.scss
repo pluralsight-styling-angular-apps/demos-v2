@@ -1,0 +1,24 @@
+@import '../../../../scss/root/colors';
+
+
+
+
+:host(.color--02) {
+
+    .modal {
+        background: $g-root__color--primary--01a;
+        color: white;
+
+        &__close {
+            border: solid 1px white;
+
+            &::before,
+            &::after {
+                background: white;
+            }
+
+        }
+
+    }
+
+}
