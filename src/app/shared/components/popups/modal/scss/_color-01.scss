@@ -1,0 +1,18 @@
+:host(.color--01) {
+
+    .modal {
+        background: white;
+
+        &__close {
+            border-color: #ccc;
+
+            &::before,
+            &::after {
+                background: #ccc;
+            }
+
+        }
+
+    }
+
+}
