@@ -3,14 +3,14 @@
 
 
 
-:host(.color--02) {
+:host(.color--03) {
 
     // CSS Custom Properties
-    --background: #C43B0E;
+    --background: #1F778D;
     --foreground: white;
 
     .modal {
-        background: $g-root__color--primary--01a;
+        background: $g-root__color--primary--02a;
         color: white;
 
         &__close {
