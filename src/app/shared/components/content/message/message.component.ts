@@ -1,5 +1,11 @@
   
-import { AfterContentInit, Component, ContentChild, ElementRef } from '@angular/core';
+import { Component, ContentChild, Directive, ElementRef } from '@angular/core';
+
+@Directive({ selector: 'saa-message-title' })
+export class MessageTitleDirective {}
+
+@Directive({ selector: 'saa-message-content' })
+export class MessageContentDirective {}
 
 @Component({
     selector: 'saa-message',
@@ -7,8 +13,8 @@ import { AfterContentInit, Component, ContentChild, ElementRef } from '@angular/
     styleUrls: ['./message.component.scss']
 })
 
-export class MessageComponent implements AfterContentInit {
-    @ContentChild('messageContent') messageContent: ElementRef;
+export class MessageComponent {
+    @ContentChild(MessageContentDirective) messageContent: MessageContentDirective;
     isLayout01 = false;
 
     constructor(private hostRef: ElementRef) {}
