@@ -20,8 +20,13 @@ import { NavBarSecondaryComponent } from './shared/components/navigation/navbar-
 import { PillsComponent }           from './shared/components/navigation/pills/pills.component';
 
 // PopUp Components
-import { ModalComponent }           from './shared/components/popups/modal/modal.component';
-import { ToolTipComponent }         from './shared/components/popups/tooltip/tooltip.component';
+import { 
+  ModalComponent,
+  ModalContentDirective,
+  ModalHighlightDirective }         from './shared/components/popups/modal/modal.component';
+import {
+  ToolTipComponent,
+  TooltipMessageDirective }         from './shared/components/popups/tooltip/tooltip.component';
 
 @NgModule({
   imports:      [ BrowserModule ],
@@ -40,7 +45,10 @@ import { ToolTipComponent }         from './shared/components/popups/tooltip/too
       NavBarSecondaryComponent,
       PillsComponent,
       ModalComponent,
-      ToolTipComponent
+      ModalContentDirective,
+      ModalHighlightDirective,
+      ToolTipComponent,
+      TooltipMessageDirective
   ],
   bootstrap:    [ AppComponent ]
 })
