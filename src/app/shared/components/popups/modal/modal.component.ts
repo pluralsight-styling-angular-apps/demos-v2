@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, Directive } from '@angular/core';
+
+@Directive({ selector: 'saa-modal-content' })
+export class ModalContentDirective {}
 
 @Component({
   selector: 'saa-modal',
