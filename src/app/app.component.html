@@ -21,13 +21,13 @@
             <p class="content__paragraph">
                 <saa-modal class="color--02">
                     <strong>Click here to learn More!</strong>
-                    <div slot-content>
+                    <saa-modal-content>
                         <h1>Styling Angular Applications</h1>
                         <saa-message class="layout--02">
-                            <span slot-title>Your Account is Expiring!</span>
-                            <span slot-message #messageContent>Your account will expire within the next thirty days. Please update your payment method in your account.</span>
+                            <saa-message-title>Your Account is Expiring!</saa-message-title>
+                            <saa-message-content>Your account will expire within the next thirty days. Please update your payment method in your account.</saa-message-content>
                         </saa-message>
-                    </div>
+                    </saa-modal-content>
                 </saa-modal>
             </p>
 
@@ -85,10 +85,10 @@
             <saa-pills [pills]="pills"></saa-pills>
             <p class="content__paragraph">
                 This course assumes an understanding of 
-                <saa-tooltip>HTML<span slot-message>Hyper Text Markup Language. Describes the structure of Web pages using markup.</span></saa-tooltip>, 
-                <saa-tooltip>CSS<span slot-message>Cascading Style Sheets. Describes how HTML elements are to be displayed on screen, paper, or in other media.</span>
+                <saa-tooltip>HTML<saa-tooltip-message>Hyper Text Markup Language. Describes the structure of Web pages using markup.</saa-tooltip-message></saa-tooltip>, 
+                <saa-tooltip>CSS<saa-tooltip-message>Cascading Style Sheets. Describes how HTML elements are to be displayed on screen, paper, or in other media.</saa-tooltip-message>
                 </saa-tooltip>, CSS Preprocessors, namely 
-                <saa-tooltip>SASS<span slot-message>Syntactically Awesome Style Sheets. A scripting language that is interpreted into Cascading Style Sheets (CSS).</span></saa-tooltip>,
+                <saa-tooltip>SASS<saa-tooltip-message>Syntactically Awesome Style Sheets. A scripting language that is interpreted into Cascading Style Sheets (CSS).</saa-tooltip-message></saa-tooltip>,
                 and a general familiarity with Angular and Typescript.
             </p>
 
