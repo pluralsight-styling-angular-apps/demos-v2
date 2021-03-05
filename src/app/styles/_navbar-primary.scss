@@ -1,0 +1,43 @@
+@import 'colors';
+
+
+
+.navbar-primary {
+    background: $color__primary--01a;
+    display: block; 
+    margin-top: 1.8em; 
+    padding: 1em 0;
+}
+
+.navbar-primary__items {
+    display: flex; 
+    list-style: none; 
+    margin: 0; 
+    padding: 0;
+}
+
+.navbar-primary__item {
+    padding: 0 1em; 
+}
+
+.navbar-primary__item-icon {
+    fill: white;
+    height: 0.8em;
+    margin-right: 0.25em;
+    width: 0.8em;
+}
+
+.navbar-primary__item-link {
+    color: white; 
+    font-size: 1.2em;
+    
+    &:hover {
+        color: white; 
+    }
+
+}
+
+// First
+.navbar-primary__item:first-child {
+    padding-left: 0;
+}

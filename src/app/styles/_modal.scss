@@ -1,0 +1,69 @@
+@import "colors";
+
+
+
+
+.modal__shield {
+    background: rgba(black, 0.75);
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 49;
+}
+
+.modal__window {
+    backface-visibility: hidden;
+    background: $color__primary--01a;
+    border-radius: 0.5em;
+    color: white;
+    height: 66.7vh;
+    left: 50%;
+    min-width: 33.3125rem;
+    padding: 0 1.5em 1.5em;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 66.7%;
+    z-index: 50;
+
+    h1, h2, h3 {
+        color: white;
+    }
+
+}
+
+.modal__close {
+    border: solid 1px white;
+    border-radius: 50%;
+    cursor: pointer;
+    display: block;
+    height: 1.7em;
+    overflow: hidden;
+    position: absolute;
+    right: 0.5em;
+    text-indent: -9999px;
+    top: 0.5em;
+    width: 1.7em;
+}
+
+.modal__close::before,
+.modal__close::after {
+    background: white;
+    content: "";
+    height: 0.125em;
+    left: 0.25em;
+    margin-top: -0.0625em;
+    position: absolute;
+    top: 50%;
+    right: 0.25em;
+}
+
+.modal__close::before {
+    transform: rotate(45deg);
+}
+
+.modal__close::after {
+    transform: rotate(-45deg);
+}

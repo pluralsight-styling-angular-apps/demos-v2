@@ -1,0 +1,46 @@
+.accordion {
+    border-top: solid 1px #ccc;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ 
+.accordion__item {
+    border: solid 1px #ccc;
+    border-top: none;
+}
+
+.accordion__label {
+    display: flex;
+    padding: 1em;
+
+    &::after {
+        content: '\25bc';
+        max-width: 1em;
+        min-width: 1em;
+    }
+
+    &-text {
+        flex: 1;
+        padding-right: 0.5em;
+    }
+
+}
+
+.accordion__pane {
+    padding: 0 1em;
+}
+
+// Hover
+.accordion__label:hover {
+    text-decoration: none;
+}
+
+.accordion__label:hover .accordion__label-text {
+    text-decoration: underline;
+}
+
+// Active
+.accordion__label--active::after {
+    content: '\25b2';
+}

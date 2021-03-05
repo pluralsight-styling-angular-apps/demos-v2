@@ -1,0 +1,31 @@
+.navbar-secondary {
+    display: block;
+    padding: 1em 0 1.8em;
+}
+
+.navbar-secondary__items {
+    display: flex; 
+    list-style: none; 
+    margin: 0; 
+    padding: 0;
+}
+
+.navbar-secondary__item {
+    padding: 0 1em;
+}
+
+.navbar-secondary__item-link {
+    color: white; 
+    cursor: pointer;    
+    text-decoration: none;
+}
+        
+.navbar-secondary__item-link:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+// First
+.navbar-secondary__item:first-child {
+    padding-left: 0;
+}
