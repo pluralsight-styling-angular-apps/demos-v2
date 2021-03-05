@@ -24,10 +24,10 @@ a:hover {
 
 // Colors
 // ________________________________________________________
-:host-context(.color--01) {
+:host(.color--01) {
     background: #675BA7; 
 }
 
-:host-context(.color--02) {
+:host(.color--02) {
     background: #2A9FBC; 
 }
