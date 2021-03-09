@@ -6,7 +6,6 @@
 :host {
     border-top: solid 0.0625em #ccc;
     display: block;
-    font-size: 1rem;
 }
 
 .items {
@@ -23,32 +22,31 @@
         @include g-root__link;
         display: flex;
         padding: 1em;
+    }
 
-        &::after {
-            content: '\25bc';
-            max-width: 1em;
-            min-width: 1em;
-        }
+    &__label::after {
+        content: '\25bc';
+        max-width: 1em;
+        min-width: 1em;
+    }
 
-        &-text {
-            flex: 1;
-            padding-right: 0.5em;
-        }
+    &__label-text {
+        flex: 1;
+        padding-right: 0.5em;
+    }
 
-        // Hover
-        &:hover {
-            text-decoration: none;
-        }
+    // Hover
+    &__label:hover {
+        text-decoration: none;
+    }
 
-        &:hover &-text {
-            text-decoration: underline;
-        }
+    &__label:hover &__label-text {
+        text-decoration: underline;
+    }
 
-        // Active
-        &--active::after {
-            content: '\25b2';
-        }
-
+    // Active
+    &__label--active::after {
+        content: '\25b2';
     }
 
 }
