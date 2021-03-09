@@ -1,0 +1,20 @@
+@import '../root/colors';
+
+
+
+
+.l-app-header {
+    background: $color__secondary--04a;
+    display: block;
+    font-family: arial, sans-serif;
+    overflow: hidden;
+    margin-bottom: 1.8em;
+}
+
+.l-app-header__title {
+    color: white;
+}
+
+.l-app-header__sub-title {
+    color: #888;
+}

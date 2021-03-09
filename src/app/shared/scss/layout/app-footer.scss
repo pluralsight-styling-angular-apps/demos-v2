@@ -1,0 +1,24 @@
+@import '../root/colors';
+
+
+
+
+.l-app-footer {
+    background: $color__secondary--04a;
+    color: #555;
+    display: block;
+    font-family: arial, sans-serif;
+    margin-top: 1.8em;
+    overflow: hidden;
+    padding: 1em 0 3em;
+}
+
+.l-app-footer__title {
+    border-top: solid 1px #444;
+    display: block;
+    padding: 2.5em 0 0.3em;
+}
+
+.l-app-footer__sub-title {
+    font-size: 0.8em;
+}

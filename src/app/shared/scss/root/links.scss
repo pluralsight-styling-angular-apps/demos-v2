@@ -1,0 +1,26 @@
+@import 'colors';
+
+
+
+a {
+    color: $color__primary--02a;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    text-decoration: underline;
+}
+
+a:hover {
+    color: $color__primary--02b;
+}
+
+a:active {
+    color: $color__primary--01a;
+}
+
+a:visited {
+    color: $color__primary--03a;
+}

@@ -1,21 +1,21 @@
 // Root
 // _________________________________________________________________________________________
-@import 'app/shared/scss/root/normalize';
-@import 'app/shared/scss/root/root';
-@import 'app/shared/scss/root/links';
+@import 'scss/root/normalize';
+@import 'scss/root/root';
+@import 'scss/root/links';
 
 
 
 // Layout
 // _________________________________________________________________________________________
-@import 'app/shared/scss/layout/app-header';
-@import 'app/shared/scss/layout/app-footer';
-@import 'app/shared/scss/layout/layout';
+@import 'scss/layout/app-header';
+@import 'scss/layout/app-footer';
+@import 'scss/layout/layout';
 
 
 
 
 // Typography
 // _________________________________________________________________________________________
-@import 'app/shared/scss/typography/headers';
-@import 'app/shared/scss/typography/paragraphs';
+@import 'scss/typography/headers';
+@import 'scss/typography/paragraphs';
