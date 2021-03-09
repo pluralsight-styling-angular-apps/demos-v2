@@ -17,37 +17,38 @@
 .item {        
     border: solid 1px #ccc;
     border-top: none;
-}
 
-.item__label {
-    @include g-root__link;
-    display: flex;
-    padding: 16px;
-}
+    &__label {
+        @include g-root__link;
+        display: flex;
+        padding: 16px;
+    }
 
-.item__label::after {
-    content: '\25bc';
-    max-width: 16px;
-    min-width: 16px;
-}
+    &__label::after {
+        content: '\25bc';
+        max-width: 16px;
+        min-width: 16px;
+    }
 
-.item__label-text {
-    flex: 1;
-    padding-right: 8px;
-}
+    &__label-text {
+        flex: 1;
+        padding-right: 8px;
+    }
 
-// Hover
-.item__label:hover {
-    text-decoration: none;
-}
+    // Hover
+    &__label:hover {
+        text-decoration: none;
+    }
 
-.item__label:hover .item__label-text {
-    text-decoration: underline;
-}
+    &__label:hover &__label-text {
+        text-decoration: underline;
+    }
 
-// Active
-.item__label--active::after {
-    content: '\25b2';
+    // Active
+    &__label--active::after {
+        content: '\25b2';
+    }
+
 }
 
 
@@ -60,15 +61,16 @@
     .item__label {
         font-size: 13px;
         padding: 13px;
-    }
 
-    .item__label::after {
-        max-width: 13px;
-        min-width: 13px;
-    }
+        &::after {
+            max-width: 13px;
+            min-width: 13px;
+        }
 
-    .item__label-text {
-        padding-right: 5px;
+        &-text {
+            padding-right: 5px;
+        }
+
     }
 
 }
