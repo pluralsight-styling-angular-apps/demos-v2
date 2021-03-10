@@ -22,13 +22,6 @@
 .item {
     padding: 0 1em;
 
-    &__icon {
-        fill: white;
-        height: 0.8em;
-        margin-right: 0.25em;
-        width: 0.8em;
-    }
-
     &__link {
         color: white; 
         cursor: pointer;
@@ -40,6 +33,13 @@
             text-decoration: underline;
         }
 
+    }
+
+    &__icon {
+        fill: white;
+        height: 0.8em;
+        margin-right: 0.25em;
+        width: 0.8em;
     }
 
     // First
