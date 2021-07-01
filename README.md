@@ -1,7 +1,7 @@
 # So, What is This?
 This repository contains all code examples for the demos from my [Pluralsight](https://www.Pluralsight.com "Pluralsight") course: Styling Angular Applications. Use these files to follow along with the course or for whatever you want really.
 
-#Styling Angular Applications
+# Styling Angular Applications
 Angular revolutionizes the way that we architect CSS for modern web applications. But before we can become Angular styling ninjas we need to take a step back consider the many different ways that things can be done. In this course we explore how the framework aligns with web components and what that means for adding styles to components and apps in general. Throughout this course we develop systems geared towards organization, scale, and maintainability for HTML and CSS within Angular apps. And as we get more comfortable adding and styling components within these systems we consider component themes and the ways that we can transform their look under certain circumstances. By the end of this course we'll have a strong knowledge of how Angular processes CSS and the many different ways it can be leveraged as part of an overall design system for creating beautiful, organized, maintainable, and future proof web applications.
 
 ##### Introduction
@@ -25,8 +25,8 @@ In order to work with this project here's what you'll need to do...
 1. Install the following if you don't already have them
   * [node.js](https://nodejs.org/en/ "Node.js")
   * [git](https://git-scm.com/ "Git")<br /><br />
-2. Clone the repository down to your computer<br />`https://github.com/pluralsight-styling-angular-apps/demos.git`<br /><br />
-3. CD to the project folder<br />`cd demos`<br /><br />
+2. Clone the repository down to your computer<br />`https://github.com/pluralsight-styling-angular-apps/demos-v2.git`<br /><br />
+3. CD to the project folder<br />`cd demos-v2`<br /><br />
 4. Install project dependencies<br />`npm install`<br /><br />
 5. Build the code, watch for file changes, and serve up the site locally<br />`npm start`
 
