@@ -1,4 +1,4 @@
-@import 'colors';
+@use 'colors';
 
 
 
@@ -11,7 +11,7 @@
        
 .pills__item-link {
     background: #efefef;
-    background: rgba($color__secondary--04c, 0.6);
+    background: rgba(colors.$color__secondary--04c, 0.6);
     border-radius: 0.5em;
     display: block;
     margin: 0 0.2em;
@@ -20,16 +20,16 @@
 }
 
 .pills__item-link:hover {
-    background: $color__secondary--04c;
+    background: colors.$color__secondary--04c;
     text-decoration: none;
 }
 
 .pills__item-link:active {
-    color: $color__primary--02b;
+    color: colors.$color__primary--02b;
 }
 
 .pills__item-link:visited {
-    color: $color__primary--02a;
+    color: colors.$color__primary--02a;
 }
 
 // First Item
@@ -39,13 +39,13 @@
 
 // Selected
 .pills__item-link--selected {
-    background: $color__primary--02a;
+    background: colors.$color__primary--02a;
     color: white;
 }
 
 .pills__item-link--selected:hover,
 .pills__item-link--selected:active {      
-    background: $color__primary--02a;          
+    background: colors.$color__primary--02a;          
     color: white;
     cursor: default;                
 }

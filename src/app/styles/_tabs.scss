@@ -1,4 +1,4 @@
-@import 'colors';
+@use 'colors';
 
 
 
@@ -29,17 +29,17 @@
 }
 
 .tabs__item-link:hover {
-    background: $color__secondary--04c;
+    background: colors.$color__secondary--04c;
     border-bottom-color: #ccc;
     text-decoration: none;
 }
 
 .tabs__item-link:active {
-    color: $color__primary--02b;
+    color: colors.$color__primary--02b;
 }
 
 .tabs__item-link:visited {
-    color: $color__primary--02a;
+    color: colors.$color__primary--02a;
 }
 
 // First Item
@@ -51,7 +51,7 @@
 .tabs__item-link--active {
     background: white;
     border-bottom-color: transparent;
-    color: $color__primary--03a;
+    color: colors.$color__primary--03a;
 }
 
 .tabs__item-link--active:hover,
@@ -59,7 +59,7 @@
 .tabs__item-link--active:visited {      
     background: white; 
     border-bottom-color: transparent;        
-    color: $color__primary--03a;
+    color: colors.$color__primary--03a;
     cursor: default;                
 }
 
