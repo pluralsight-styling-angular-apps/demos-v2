@@ -1,33 +1,33 @@
 // Global
 // _________________________________________________________________________________________
-@import 'styles/normalize';
-@import 'styles/root';
+@use 'styles/normalize';
+@use 'styles/root';
 
 
 
 // App
 // _________________________________________________________________________________________
-@import 'styles/app-header';
-@import 'styles/app-footer';
+@use 'styles/app-header';
+@use 'styles/app-footer';
 
 
 
 
 // Core
 // _________________________________________________________________________________________
-@import 'styles/links';
-@import 'styles/layout';
-@import 'styles/typography';
+@use 'styles/links';
+@use 'styles/layout';
+@use 'styles/typography';
 
 
 
 
 // Components
 // _________________________________________________________________________________________
-@import 'styles/accordion';
-@import 'styles/modal';
-@import 'styles/navbar-primary';
-@import 'styles/navbar-secondary';
-@import 'styles/pills';
-@import 'styles/tabs';
-@import 'styles/tooltip';
+@use 'styles/accordion';
+@use 'styles/modal';
+@use 'styles/navbar-primary';
+@use 'styles/navbar-secondary';
+@use 'styles/pills';
+@use 'styles/tabs';
+@use 'styles/tooltip';

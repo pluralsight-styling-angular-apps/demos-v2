@@ -1,4 +1,4 @@
-@import 'colors';
+@use 'colors';
 
 
 
@@ -11,7 +11,7 @@
 }
 
 .tooltip__popup {
-    background-color: $color__primary--03a;
+    background-color: colors.$color__primary--03a;
     border-radius: 0;
     color: white;
     font-size: 75%;
@@ -32,7 +32,7 @@
 .tooltip__popup::before {
     border: inset 0.75rem;
     border-bottom-style: solid;
-    border-color: transparent transparent $color__primary--03a;
+    border-color: transparent transparent colors.$color__primary--03a;
     border-top-width: 0;
     bottom: 100%;
     content: "";

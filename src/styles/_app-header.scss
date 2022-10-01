@@ -1,10 +1,10 @@
-@import 'colors';
+@use 'colors';
 
 
 
 
 .app-header {
-    background: $color__secondary--04a;
+    background: colors.$color__secondary--04a;
     display: block;
     font-family: arial, sans-serif;
     overflow: hidden;
