@@ -1,4 +1,4 @@
-@import 'colors';
+@use 'colors';
 
 
 
@@ -14,9 +14,9 @@
 
     &__link {
         background: #efefef;
-        background: rgba($g-root__color--secondary--04c, 0.6);
+        background: rgba(colors.$g-root__color--secondary--04c, 0.6);
         border-radius: 0.5em;
-        color: $g-root__color--primary--02a;
+        color: colors.$g-root__color--primary--02a;
         cursor: pointer;
         display: block;
         margin: 0 0.2em;
@@ -24,27 +24,27 @@
         transition: background ease 0.25s;
 
         &:hover {
-            background: $g-root__color--secondary--04c;
-            color: $g-root__color--primary--02b;
+            background: colors.$g-root__color--secondary--04c;
+            color: colors.$g-root__color--primary--02b;
             text-decoration: none;
         }
 
         &:active {
-            color: $g-root__color--primary--02b;
+            color: colors.$g-root__color--primary--02b;
         }
 
         &:visited {
-            color: $g-root__color--primary--02a;
+            color: colors.$g-root__color--primary--02a;
         }
 
         // Selected
         &--selected {
-            background: $g-root__color--primary--02a;
+            background: colors.$g-root__color--primary--02a;
             color: white;
     
             &:hover,
             &:active {      
-                background: $g-root__color--primary--02a;          
+                background: colors.$g-root__color--primary--02a;          
                 color: white;
                 cursor: default;                
             }
