@@ -1,21 +1,21 @@
 // Root
 // _________________________________________________________________________________________
-@import 'root/normalize';
-@import 'root/root';
-@import 'root/links';
+@use 'root/normalize';
+@use 'root/root';
+@use 'root/links';
 
 
 
 // Layout
 // _________________________________________________________________________________________
-@import 'layout/app-header';
-@import 'layout/app-footer';
-@import 'layout/layout';
+@use 'layout/app-header';
+@use 'layout/app-footer';
+@use 'layout/layout';
 
 
 
 
 // Typography
 // _________________________________________________________________________________________
-@import 'typography/headers';
-@import 'typography/paragraphs';
+@use 'typography/headers';
+@use 'typography/paragraphs';

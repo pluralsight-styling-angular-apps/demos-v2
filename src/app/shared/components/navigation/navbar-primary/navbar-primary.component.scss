@@ -1,10 +1,10 @@
-@import '../../../scss/root/colors';
+@use '../../../scss/root/colors';
 
 
 
 
 :host {
-    background: $color__primary--01a;
+    background: colors.$color__primary--01a;
     display: block; 
     margin-top: 1.8em; 
     padding: 1em 0;
