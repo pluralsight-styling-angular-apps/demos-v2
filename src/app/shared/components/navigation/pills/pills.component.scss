@@ -1,4 +1,4 @@
-@import '../../../scss/root/colors';
+@use '../../../scss/root/colors';
 
 
 
@@ -11,7 +11,7 @@
     
 .item__link {
     background: #efefef;
-    background: rgba($color__secondary--04c, 0.6);
+    background: rgba(colors.$color__secondary--04c, 0.6);
     border-radius: 0.5em;
     display: block;
     margin: 0 0.2em;
@@ -20,16 +20,16 @@
 }
 
 .item__link:hover {
-    background: $color__secondary--04c;
+    background: colors.$color__secondary--04c;
     text-decoration: none;
 }
 
 .item__link:active {
-    color: $color__primary--02b;
+    color: colors.$color__primary--02b;
 }
 
 .item__link:visited {
-    color: $color__primary--02a;
+    color: colors.$color__primary--02a;
 }
 
 // First Item
@@ -39,13 +39,13 @@
 
 // Selected
 .item__link--selected {
-    background: $color__primary--02a;
+    background: colors.$color__primary--02a;
     color: white;
 }
 
 .item__link--selected:hover,
 .item__link--selected:active {      
-    background: $color__primary--02a;          
+    background: colors.$color__primary--02a;          
     color: white;
     cursor: default;                
 }
