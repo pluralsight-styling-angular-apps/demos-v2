@@ -1,11 +1,11 @@
-@import 'colors';
-@import 'container';
+@use 'colors';
+@use 'container';
 
 
 
 
 :host {
-    background: $g-root__color--primary--01a;
+    background: colors.$g-root__color--primary--01a;
     display: block; 
     font-size: 1rem;
     margin-top: 1.8em; 
@@ -13,9 +13,9 @@
 }
 
 .items {
-    @include g-layout__container;
+    @include container.g-layout__container;
     display: flex; 
-    list-style: none; 
+    list-style: none;
 }
 
 

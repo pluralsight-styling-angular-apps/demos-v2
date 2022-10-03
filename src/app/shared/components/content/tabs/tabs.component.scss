@@ -1,4 +1,4 @@
-@import 'colors';
+@use 'colors';
 
 
 
@@ -24,7 +24,7 @@
         background: #efefef;
         border-radius: 0.5em 0.5em 0 0;
         border: solid 1px #ccc;
-        color: $g-root__color--primary--02a;
+        color: colors.$g-root__color--primary--02a;
         cursor: pointer;
         display: block;
         margin: 0 0.2em;
@@ -32,32 +32,32 @@
         transition: background ease 0.25s;
 
         &:hover {
-            background: $g-root__color--secondary--04c;
+            background: colors.$g-root__color--secondary--04c;
             border-bottom-color: #ccc;
-            color: $g-root__color--primary--02b;
+            color: colors.$g-root__color--primary--02b;
             text-decoration: none;
         }
 
         &:active {
-            color: $g-root__color--primary--02b;
+            color: colors.$g-root__color--primary--02b;
         }
 
         &:visited {
-            color: $g-root__color--primary--02a;
+            color: colors.$g-root__color--primary--02a;
         }
 
         // Active
         &--active {
             background: white;
             border-bottom-color: transparent;
-            color: $g-root__color--primary--03a;
+            color: colors.$g-root__color--primary--03a;
     
             &:hover,
             &:active,
             &:visited {      
                 background: white; 
                 border-bottom-color: transparent;        
-                color: $g-root__color--primary--03a;
+                color: colors.$g-root__color--primary--03a;
                 cursor: default;                
             }
     

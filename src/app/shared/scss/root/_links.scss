@@ -1,9 +1,9 @@
-@import 'colors';
+@use 'colors';
 
 
 
 @mixin g-root__link {
-    color: $g-root__color--primary--02a;
+    color: colors.$g-root__color--primary--02a;
     cursor: pointer;
     text-decoration: none;
 
@@ -13,15 +13,15 @@
     }
 
     &:hover {
-        color: $g-root__color--primary--02b;
+        color: colors.$g-root__color--primary--02b;
     }
 
     &:active {
-        color: $g-root__color--primary--01a;
+        color: colors.$g-root__color--primary--01a;
     }
 
     &:visited {
-        color: $g-root__color--primary--03a;
+        color: colors.$g-root__color--primary--03a;
     }
 
 }
