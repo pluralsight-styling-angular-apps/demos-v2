@@ -1,4 +1,4 @@
-@import '../../../scss/root/colors';
+@use '../../../scss/root/colors';
 
 
 
@@ -12,9 +12,9 @@
         
 .item__link {
     background: #efefef;
-    background: rgba($g-root__color--secondary--04c, 0.6);
+    background: rgba(colors.$g-root__color--secondary--04c, 0.6);
     border-radius: 0.5em;
-    color: $g-root__color--primary--02a;
+    color: colors.$g-root__color--primary--02a;
     cursor: pointer;
     display: block;
     margin: 0 0.2em;
@@ -23,17 +23,17 @@
 }
 
 .item__link:hover {
-    background: $g-root__color--secondary--04c;
-    color: $g-root__color--primary--02b;
+    background: colors.$g-root__color--secondary--04c;
+    color: colors.$g-root__color--primary--02b;
     text-decoration: none;
 }
 
 .item__link:active {
-    color: $g-root__color--primary--02b;
+    color: colors.$g-root__color--primary--02b;
 }
 
 .item__link:visited {
-    color: $g-root__color--primary--02a;
+    color: colors.$g-root__color--primary--02a;
 }
 
 // First Item
@@ -43,13 +43,13 @@
 
 // Selected
 .item__link--selected {
-    background: $g-root__color--primary--02a;
+    background: colors.$g-root__color--primary--02a;
     color: white;
 }
 
 .item__link--selected:hover,
 .item__link--selected:active {      
-    background: $g-root__color--primary--02a;          
+    background: colors.$g-root__color--primary--02a;          
     color: white;
     cursor: default;                
 }

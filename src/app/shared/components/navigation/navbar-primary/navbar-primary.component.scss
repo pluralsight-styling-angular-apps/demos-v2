@@ -1,18 +1,18 @@
-@import '../../../scss/root/colors';
-@import '../../../scss/layout/container';
+@use '../../../scss/root/colors';
+@use '../../../scss/layout/container';
 
 
 
 
 :host {
-    background: $g-root__color--primary--01a;
+    background: colors.$g-root__color--primary--01a;
     display: block; 
     margin-top: 1.8em; 
     padding: 1em 0;
 }
 
 .items {
-    @include g-layout__container;
+    @include container.g-layout__container;
     display: flex; 
     list-style: none; 
     margin-bottom: 0;
