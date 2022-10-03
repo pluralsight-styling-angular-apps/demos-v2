@@ -1,4 +1,4 @@
-@import 'links';
+@use 'links';
 
 
 
@@ -19,7 +19,7 @@
     border-top: none;
 
     &__label {
-        @include g-root__link;
+        @include links.g-root__link;
         display: flex;
         padding: 1em;
     }
