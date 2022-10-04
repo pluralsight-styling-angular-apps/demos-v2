@@ -1,4 +1,4 @@
-@import 'container';
+@use 'container';
 
 
 
@@ -13,7 +13,7 @@ $navbar-primary__icon-size: 0.8em;
 // Items
 // _________________________________________________________________________________________
 .items {
-    @include g-layout__container;
+    @include container.g-layout__container;
     list-style: none; 
 }
 

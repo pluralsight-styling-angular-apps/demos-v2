@@ -1,11 +1,11 @@
-@import 'colors';
-@import 'container';
+@use 'colors';
+@use 'container';
 
 
 
 
 .footer {
-    background: $g-root__color--secondary--04a;
+    background: colors.$g-root__color--secondary--04a;
     color: #555;
     display: block;
     font-family: arial, sans-serif;
