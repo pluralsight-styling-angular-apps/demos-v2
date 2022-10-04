@@ -1,11 +1,11 @@
 
-@import 'container';
+@use 'container';
 
 
 
 
 .items {
-    @include g-layout__container;
+    @include container.g-layout__container;
     display: flex; 
     list-style: none; 
 }
