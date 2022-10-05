@@ -48,7 +48,7 @@
     
             &:hover,
             &:active {      
-                background: $g-root__color--primary--02a;          
+                background: colors.$g-root__color--primary--02a;          
                 color: white;
                 cursor: default;                
             }
