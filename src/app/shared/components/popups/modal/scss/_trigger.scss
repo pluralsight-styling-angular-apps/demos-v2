@@ -1,8 +1,8 @@
-@import 'links';
+@use 'links';
 
 
 
 
 .trigger {
-    @include g-root__link;
+    @include links.g-root__link;
 }

@@ -1,5 +1,5 @@
-@import 'headers';
-@import 'paragraphs';
+@use 'headers';
+@use 'paragraphs';
 
 
 
@@ -11,12 +11,12 @@
     padding: 1em;
 
     &__title {
-        @include g-root__h3;
+        @include headers.g-root__h3;
         margin-top: 0.5em;
     }
 
     &__description {
-        @include g-root__paragraph;
+        @include paragraphs.g-root__paragraph;
     }
 
 }
