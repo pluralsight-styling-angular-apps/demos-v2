@@ -1,10 +1,10 @@
-@import 'colors';
+@use 'colors';
 
 
 
 
 .tooltip {
-    background-color: $g-root__color--primary--03a;
+    background-color: colors.$g-root__color--primary--03a;
     border-radius: 0;
     color: white;
     font-size: 75%;
@@ -24,7 +24,7 @@
     &::before {
         border: inset 0.75rem;
         border-bottom-style: solid;
-        border-color: transparent transparent $g-root__color--primary--03a;
+        border-color: transparent transparent colors.$g-root__color--primary--03a;
         border-top-width: 0;
         bottom: 100%;
         content: "";

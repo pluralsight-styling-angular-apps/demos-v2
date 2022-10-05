@@ -1,14 +1,14 @@
-@import 'grid';
+@use 'grid';
 
 
 
 
 .items {
-    @include g-layout__grid;
+    @include grid.g-layout__grid;
 }
 
 .item {
-    @include g-layout__grid__item--06;
+    @include grid.g-layout__grid__item--06;
 
     &__image {
         height: 12em;
