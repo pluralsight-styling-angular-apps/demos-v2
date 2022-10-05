@@ -1,6 +1,6 @@
-@import 'colors';
-@import 'headers';
-@import 'paragraphs';
+@use 'colors';
+@use 'headers';
+@use 'paragraphs';
 
 
 
@@ -26,15 +26,15 @@
     }    
 
     &__title {
-        @include g-root__h3;
+        @include headers.g-root__h3;
     }
 
     &__description {
-        @include g-root__paragraph;
+        @include paragraphs.g-root__paragraph;
     }
 
     &__button {
-        background: $g-root__color--primary--02a;
+        background: colors.$g-root__color--primary--02a;
         border-radius: 0.5em;
         color: white;
         cursor: pointer;
@@ -43,19 +43,19 @@
         transition: background ease 0.25s;
 
         &:hover {
-            background: $g-root__color--primary--02b;
+            background: colors.$g-root__color--primary--02b;
         }
 
     }
 
     // First Item
     &:first-child &__thumbnail {
-        background: $g-root__color--secondary--01a;
+        background: colors.$g-root__color--secondary--01a;
     }
 
     // Last Item
     &:last-child &__thumbnail {
-        background: $g-root__color--secondary--03a;
+        background: colors.$g-root__color--secondary--03a;
     }
 
 }
