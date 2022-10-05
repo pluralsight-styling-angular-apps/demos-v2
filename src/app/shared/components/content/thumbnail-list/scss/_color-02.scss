@@ -1,10 +1,10 @@
-@import 'colors';
+@use 'colors';
 
 
 
 
 .item {
-    background: $g-root__color--secondary--01a;
+    background: colors.$g-root__color--secondary--01a;
     color: white;
 
     &__thumbnail {

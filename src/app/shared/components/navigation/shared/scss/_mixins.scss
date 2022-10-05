@@ -1,12 +1,12 @@
-@import 'variables';
+@use 'variables';
 
 
 
 
 @mixin navbar-primary__icon {
     fill: white;
-    height: $navbar-primary__icon-size;
-    width: $navbar-primary__icon-size;
+    height: variables.$navbar-primary__icon-size;
+    width: variables.$navbar-primary__icon-size;
 }   
 
 @mixin navigation__search {

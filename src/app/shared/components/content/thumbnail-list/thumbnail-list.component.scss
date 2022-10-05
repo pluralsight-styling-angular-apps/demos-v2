@@ -1,6 +1,6 @@
-@import 'scss/globals';
-@import 'scss/items';
+@use 'scss/globals';
+@use 'scss/items';
 
 // Layouts
-@import 'scss/layout-01';
-@import 'scss/layout-02';
+@use 'scss/layout-01';
+@use 'scss/layout-02';
