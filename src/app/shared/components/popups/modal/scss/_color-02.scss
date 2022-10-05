@@ -1,4 +1,4 @@
-@import 'colors';
+@use 'colors';
 
 
 
@@ -6,7 +6,7 @@
 :host(.color--02) {
 
     .modal {
-        background: $g-root__color--primary--01a;
+        background: colors.$g-root__color--primary--01a;
         color: white;
 
         &__close {
