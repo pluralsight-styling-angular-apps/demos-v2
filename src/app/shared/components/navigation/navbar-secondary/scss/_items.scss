@@ -1,11 +1,11 @@
-@import 'container';
-@import '../../shared/scss/mixins';
+@use 'container';
+@use '../../shared/scss/mixins';
 
 
 
 
 .items {
-    @include g-layout__container;
+    @include container.g-layout__container;
     display: flex; 
     list-style: none; 
 }
@@ -36,6 +36,6 @@
     }
 
     // Search
-    @include navigation__search;
+    @include mixins.navigation__search;
 
 }
