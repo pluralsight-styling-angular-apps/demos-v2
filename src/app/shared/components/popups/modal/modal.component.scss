@@ -1,7 +1,7 @@
-@import 'scss/shield';
-@import 'scss/trigger';
-@import 'scss/modal';
+@use 'scss/shield';
+@use 'scss/trigger';
+@use 'scss/modal';
 
 // Colors
-@import 'scss/color-01';
-@import 'scss/color-02';
+@use 'scss/color-01';
+@use 'scss/color-02';

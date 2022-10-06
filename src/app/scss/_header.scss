@@ -1,23 +1,23 @@
-@import 'colors';
-@import 'container';
-@import 'headers';
+@use 'colors';
+@use 'container';
+@use 'headers';
 
 
 
 
 .header {
-    background: $g-root__color--secondary--04a;
+    background: colors.$g-root__color--secondary--04a;
     display: block;
     font-family: arial, sans-serif;
     overflow: hidden;
     margin-bottom: 1.8em;
 
     &__content {
-        @include g-layout__container;
+        @include container.g-layout__container;
     }
 
     &__title {
-        @include g-root__h1;
+        @include headers.g-root__h1;
         color: white;
     }
 

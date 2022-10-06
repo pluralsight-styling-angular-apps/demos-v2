@@ -1,11 +1,11 @@
-@import 'container';
-@import '../../shared/scss/mixins';
+@use 'container';
+@use '../../shared/scss/mixins';
 
 
 
 
 .items {
-    @include g-layout__container;
+    @include container.g-layout__container;
     list-style: none; 
 }
 
@@ -25,12 +25,12 @@
     }
 
     &__icon {
-        @include navbar-primary__icon;
+        @include mixins.navbar-primary__icon;
         margin-right: 0.25em;
     }
 
     // Search
-    @include navigation__search;
+    @include mixins.navigation__search;
 
 }
 
