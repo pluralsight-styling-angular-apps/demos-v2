@@ -1,4 +1,4 @@
-@import 'colors';
+@use 'colors';
 
 
 
@@ -10,7 +10,7 @@
     --foreground: white;
 
     .modal {
-        background: $g-root__color--primary--01a;
+        background: colors.$g-root__color--primary--01a;
         color: white;
 
         &__close {
@@ -24,7 +24,7 @@
         }
 
         &__highlight {
-            background: $g-root__color--secondary--04b;
+            background: colors.$g-root__color--secondary--04b;
             overflow: hidden;
             padding: 0 1em;
 
