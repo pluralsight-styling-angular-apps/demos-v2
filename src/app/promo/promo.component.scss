@@ -1,6 +1,6 @@
-@import 'scss/globals';
-@import 'scss/content';
+@use 'scss/globals';
+@use 'scss/content';
 
 // Colors
-@import 'scss/color-01';
-@import 'scss/color-02';
+@use 'scss/color-01';
+@use 'scss/color-02';
