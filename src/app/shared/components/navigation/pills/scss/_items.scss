@@ -1,4 +1,4 @@
-@import 'colors';
+@use 'colors';
 
 
 
@@ -21,34 +21,34 @@
 
         // Unselected
         &--unselected {
-            background: rgba($g-root__color--secondary--04c, 0.6);
-            color: $g-root__color--primary--02a;
+            background: rgba(colors.$g-root__color--secondary--04c, 0.6);
+            color: colors.$g-root__color--primary--02a;
             cursor: pointer;
 
             &:hover {
-                background: $g-root__color--secondary--04c;
-                color: $g-root__color--primary--02b;
+                background: colors.$g-root__color--secondary--04c;
+                color: colors.$g-root__color--primary--02b;
                 text-decoration: none;
             }
 
             &:active {
-                color: $g-root__color--primary--02b;
+                color: colors.$g-root__color--primary--02b;
             }
 
             &:visited {
-                color: $g-root__color--primary--02a;
+                color: colors.$g-root__color--primary--02a;
             }
 
         }
 
         // Selected
         &--selected {
-            background: $g-root__color--primary--02a;
+            background: colors.$g-root__color--primary--02a;
             color: white;
     
             &:hover,
             &:active {      
-                background: $g-root__color--primary--02a;          
+                background: colors.$g-root__color--primary--02a;          
                 color: white;
                 cursor: default;                
             }

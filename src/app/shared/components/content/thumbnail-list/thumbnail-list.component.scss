@@ -1,10 +1,10 @@
-@import 'scss/globals';
-@import 'scss/items';
+@use 'scss/globals';
+@use 'scss/items';
 
 // Layouts
-@import 'scss/layout-01';
-@import 'scss/layout-02';
+@use 'scss/layout-01';
+@use 'scss/layout-02';
 
 // Colors
-@import 'scss/color-01';
-@import 'scss/color-02';
+@use 'scss/color-01';
+@use 'scss/color-02';

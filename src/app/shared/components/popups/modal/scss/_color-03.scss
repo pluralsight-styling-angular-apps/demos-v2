@@ -1,4 +1,4 @@
-@import 'colors';
+@use 'colors';
 
 
 
@@ -10,7 +10,7 @@
     --foreground: white;
 
     .modal {
-        background: $g-root__color--primary--02a;
+        background: colors.$g-root__color--primary--02a;
         color: white;
 
         &__close {
