@@ -1,15 +1,15 @@
-@import 'colors';
-@import 'container';
-@import 'grid';
-@import 'headers';
-@import 'paragraphs';
+@use 'colors';
+@use 'container';
+@use 'grid';
+@use 'headers';
+@use 'paragraphs';
 
 
 
 
 // Header
 .header {
-    background: $g-root__color--secondary--04a;
+    background: colors.$g-root__color--secondary--04a;
     display: block;
     font-family: arial, sans-serif;
     overflow: hidden;
@@ -17,11 +17,11 @@
 }
 
 .header__content {
-    @include g-layout__container;
+    @include container.g-layout__container;
 }
 
 .header__title {
-    @include g-root__h1;
+    @include headers.g-root__h1;
     color: white;
 }
 
@@ -31,23 +31,23 @@
 
 // Content
 .content {
-    @include g-layout__container;
+    @include container.g-layout__container;
 }
 
 .content__sections {
-    @include g-layout__grid;
+    @include grid.g-layout__grid;
 }
 
 .content__title {
-    @include g-root__h2;
+    @include headers.g-root__h2;
 }
 
 .content__sub-title {
-    @include g-root__h3;
+    @include headers.g-root__h3;
 }
 
 .content__paragraph {
-    @include g-root__paragraph
+    @include paragraphs.g-root__paragraph
 }
 
 // Large Viewports
@@ -55,11 +55,11 @@
 
     .content__primary {
         font-size: 1.5em;
-        @include g-layout__grid__item--08;
+        @include grid.g-layout__grid__item--08;
     }
 
     .content__secondary {
-        @include g-layout__grid__item--04;
+        @include grid.g-layout__grid__item--04;
     }
 
 }
@@ -69,18 +69,18 @@
 
     .content__primary {
         font-size: 1.5em;
-        @include g-layout__grid__item--12;
+        @include grid.g-layout__grid__item--12;
     }
 
     .content__secondary {
-        @include g-layout__grid__item--12;
+        @include grid.g-layout__grid__item--12;
     }
 
 }
 
 // Footer
 .footer {
-    background: $g-root__color--secondary--04a;
+    background: colors.$g-root__color--secondary--04a;
     color: #555;
     display: block;
     font-family: arial, sans-serif;
@@ -90,7 +90,7 @@
 }
 
 .footer__content {
-    @include g-layout__container;
+    @include container.g-layout__container;
 }
 
 .footer__title {

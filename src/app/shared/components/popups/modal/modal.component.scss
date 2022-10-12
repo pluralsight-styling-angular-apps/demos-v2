@@ -1,4 +1,4 @@
-@import 'colors';
+@use 'colors';
 
 
 
@@ -19,7 +19,7 @@
 
 .modal {
     backface-visibility: hidden;
-    background: $g-root__color--primary--01a;
+    background: colors.$g-root__color--primary--01a;
     border-radius: 0.5em;
     color: white;
     height: 66.7vh;
