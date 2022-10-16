@@ -14,7 +14,7 @@
     padding: 1em 0 3em;
 
     &__content {
-        @include g-layout__container;
+        @include container.g-layout__container;
     }
 
     &__title {
