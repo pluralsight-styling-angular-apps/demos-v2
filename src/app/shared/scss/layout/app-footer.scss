@@ -1,10 +1,10 @@
-@import '../root/colors';
+@use '../root/colors';
 
 
 
 
 .l-app-footer {
-    background: $color__secondary--04a;
+    background: colors.$color__secondary--04a;
     color: #555;
     display: block;
     font-family: arial, sans-serif;
